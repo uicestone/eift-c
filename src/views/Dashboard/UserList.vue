@@ -12,7 +12,7 @@
           <h4 class="mb-0">
             <a href="#!">{{ user.name }}</a>
           </h4>
-          <span :class="`text-${user.statusType}`">● </span>
+          <span :class="`text-${user.statusType}`">●</span>
           <small>{{ user.status }}</small>
         </div>
         <div class="col-auto">
@@ -51,7 +51,7 @@ export default {
         },
         {
           id: 4,
-          img: "img/theme/team-4.jpg",
+          img: "img/theme/team-benz.jpg",
           name: "John Michael",
           status: "Online",
           statusType: "success",

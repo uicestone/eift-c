@@ -7,13 +7,11 @@
           <img src="img/icons/cards/paypal.png" alt="Image placeholder" />
         </div>
         <div class="col-auto">
-          <span class="badge badge-lg" :class="`badge-${card.statusType}`">
-            {{ card.status }}
-          </span>
+          <span class="badge badge-lg" :class="`badge-${card.statusType}`">{{ card.status }}</span>
         </div>
       </div>
       <div class="my-4">
-        <span class="h6 surtitle text-muted"> PayPal E-mail </span>
+        <span class="h6 surtitle text-muted">PayPal E-mail</span>
         <div class="h1">{{ card.title }}</div>
       </div>
       <div class="row">
@@ -34,7 +32,7 @@ export default {
         status: "Active",
         statusType: "success",
         title: "john.snow@gmail.com",
-        name: "John Snow",
+        name: "Karl Warren",
       },
     };
   },

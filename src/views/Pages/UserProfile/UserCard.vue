@@ -1,16 +1,12 @@
 <template>
   <div class="card card-profile">
-    <img
-      src="img/theme/img-1-1000x600.jpg"
-      alt="Image placeholder"
-      class="card-img-top"
-    />
+    <img src="img/theme/img-1-1000x600.jpg" alt="Image placeholder" class="card-img-top" />
 
     <div class="row justify-content-center">
       <div class="col-lg-3 order-lg-2">
         <div class="card-profile-image">
           <a href="#">
-            <img src="img/theme/team-4.jpg" class="rounded-circle" />
+            <img src="img/theme/team-benz.jpg" class="rounded-circle" />
           </a>
         </div>
       </div>
@@ -44,7 +40,8 @@
       </div>
       <div class="text-center">
         <h5 class="h3">
-          Jessica Jones<span class="font-weight-light">, 27</span>
+          Jessica Jones
+          <span class="font-weight-light">, 27</span>
         </h5>
         <div class="h5 font-weight-300">
           <i class="ni location_pin mr-2"></i>Bucharest, Romania

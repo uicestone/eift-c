@@ -21,10 +21,7 @@
           version="1.1"
           xmlns="http://www.w3.org/2000/svg"
         >
-          <polygon
-            class="fill-default"
-            points="2560 0 2560 100 0 100"
-          ></polygon>
+          <polygon class="fill-default" points="2560 0 2560 100 0 100" />
         </svg>
       </div>
     </div>
@@ -36,10 +33,7 @@
             <div class="row justify-content-center">
               <div class="col-lg-3 order-lg-2">
                 <div class="card-profile-image">
-                  <img
-                    src="img/theme/team-4.jpg"
-                    class="rounded-circle border-secondary"
-                  />
+                  <img src="img/theme/team-benz.jpg" class="rounded-circle border-secondary" />
                 </div>
               </div>
             </div>
@@ -54,8 +48,7 @@
                   type="password"
                   placeholder="Password"
                   v-model="model.password"
-                >
-                </base-input>
+                ></base-input>
                 <div class="text-center">
                   <base-button type="primary" class="mt-2">Unlock</base-button>
                 </div>

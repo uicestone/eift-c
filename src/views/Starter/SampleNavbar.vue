@@ -43,10 +43,7 @@
     <ul class="navbar-nav align-items-center ml-md-auto">
       <li class="nav-item d-xl-none">
         <!-- Sidenav toggler -->
-        <div
-          class="pr-3 sidenav-toggler sidenav-toggler-dark"
-          @click="toggleSidebar"
-        >
+        <div class="pr-3 sidenav-toggler sidenav-toggler-dark" @click="toggleSidebar">
           <div class="sidenav-toggler-inner">
             <i class="sidenav-toggler-line"></i>
             <i class="sidenav-toggler-line"></i>
@@ -55,12 +52,7 @@
         </div>
       </li>
       <li class="nav-item d-sm-none">
-        <a
-          class="nav-link"
-          href="#"
-          data-action="search-show"
-          data-target="#navbar-search-main"
-        >
+        <a class="nav-link" href="#" data-action="search-show" data-target="#navbar-search-main">
           <i class="ni ni-zoom-split-in"></i>
         </a>
       </li>
@@ -77,10 +69,10 @@
         >
           <div class="media align-items-center">
             <span class="avatar avatar-sm rounded-circle">
-              <img alt="Image placeholder" src="img/theme/team-4.jpg" />
+              <img alt="Image placeholder" src="img/theme/team-benz.jpg" />
             </span>
             <div class="media-body ml-2 d-none d-lg-block">
-              <span class="mb-0 text-sm font-weight-bold">John Snow</span>
+              <span class="mb-0 text-sm font-weight-bold">Karl Warren</span>
             </div>
           </div>
         </a>

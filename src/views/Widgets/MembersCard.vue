@@ -16,8 +16,7 @@
             placeholder="Search"
             type="search"
             v-model="membersSearch"
-          >
-          </base-input>
+          ></base-input>
         </div>
       </form>
     </div>
@@ -25,11 +24,7 @@
     <div class="card-body">
       <!-- List group -->
       <ul class="list-group list-group-flush list my--3">
-        <li
-          v-for="member in members"
-          :key="member.image"
-          class="list-group-item px-0"
-        >
+        <li v-for="member in members" :key="member.image" class="list-group-item px-0">
           <div class="row align-items-center">
             <div class="col-auto">
               <!-- Avatar -->
@@ -41,7 +36,7 @@
               <h4 class="mb-0">
                 <a href="#!">{{ member.name }}</a>
               </h4>
-              <span :class="`text-${member.statusType}`">● </span>
+              <span :class="`text-${member.statusType}`">●</span>
               <small>{{ member.status }}</small>
             </div>
             <div class="col-auto">
@@ -88,10 +83,10 @@ export default {
           name: "John Michael",
           status: "Online",
           statusType: "success",
-          image: "img/theme/team-4.jpg",
+          image: "img/theme/team-benz.jpg",
         },
         {
-          name: "John Snow",
+          name: "Karl Warren",
           status: "Online",
           statusType: "success",
           image: "img/theme/team-5.jpg",

@@ -10,19 +10,13 @@
           <span
             class="badge badge-lg"
             :class="`badge-${creditCard.statusType}`"
-            >{{ creditCard.status }}</span
-          >
+          >{{ creditCard.status }}</span>
         </div>
       </div>
       <div class="my-4">
-        <span class="h6 surtitle text-light"> Card number </span>
+        <span class="h6 surtitle text-light">Card number</span>
         <div class="card-serial-number h1 text-white">
-          <div
-            v-for="(part, index) in creditCard.number.split(' ')"
-            :key="index"
-          >
-            {{ part }}
-          </div>
+          <div v-for="(part, index) in creditCard.number.split(' ')" :key="index">{{ part }}</div>
         </div>
       </div>
       <div class="row">
@@ -47,7 +41,7 @@ export default {
         number: "4358 7421 9256 6682",
         status: "Active",
         statusType: "success",
-        name: "John Snow",
+        name: "Karl Warren",
         expire: "11/23",
       },
     };

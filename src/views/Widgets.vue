@@ -23,9 +23,9 @@
             icon="ni ni-active-40"
           >
             <template slot="footer">
-              <span class="text-success mr-2"
-                ><i class="fa fa-arrow-up"></i> 3.48%</span
-              >
+              <span class="text-success mr-2">
+                <i class="fa fa-arrow-up"></i> 3.48%
+              </span>
               <span class="text-nowrap">Since last month</span>
             </template>
           </stats-card>
@@ -38,24 +38,19 @@
             icon="ni ni-chart-pie-35"
           >
             <template slot="footer">
-              <span class="text-success mr-2"
-                ><i class="fa fa-arrow-up"></i> 12.18%</span
-              >
+              <span class="text-success mr-2">
+                <i class="fa fa-arrow-up"></i> 12.18%
+              </span>
               <span class="text-nowrap">Since last month</span>
             </template>
           </stats-card>
         </div>
         <div class="col-xl-3 col-md-6">
-          <stats-card
-            title="Sales"
-            type="gradient-green"
-            sub-title="924"
-            icon="ni ni-money-coins"
-          >
+          <stats-card title="Sales" type="gradient-green" sub-title="924" icon="ni ni-money-coins">
             <template slot="footer">
-              <span class="text-danger mr-2"
-                ><i class="fa fa-arrow-down"></i> 5.72%</span
-              >
+              <span class="text-danger mr-2">
+                <i class="fa fa-arrow-down"></i> 5.72%
+              </span>
               <span class="text-nowrap">Since last month</span>
             </template>
           </stats-card>
@@ -68,9 +63,9 @@
             icon="ni ni-chart-bar-32"
           >
             <template slot="footer">
-              <span class="text-success mr-2"
-                ><i class="fa fa-arrow-up"></i> 54.8%</span
-              >
+              <span class="text-success mr-2">
+                <i class="fa fa-arrow-up"></i> 54.8%
+              </span>
               <span class="text-nowrap">Since last month</span>
             </template>
           </stats-card>
@@ -83,17 +78,11 @@
           <!-- Image-Text card -->
           <div class="card">
             <!-- Card image -->
-            <img
-              class="card-img-top"
-              src="img/theme/img-1-1000x900.jpg"
-              alt="Image placeholder"
-            />
+            <img class="card-img-top" src="img/theme/img-1-1000x900.jpg" alt="Image placeholder" />
             <!-- Card body -->
             <div class="card-body">
               <h5 class="h2 card-title mb-0">Get started with Argon</h5>
-              <small class="text-muted"
-                >by John Snow on Oct 29th at 10:23 AM</small
-              >
+              <small class="text-muted">by Karl Warren on Oct 29th at 10:23 AM</small>
               <p class="card-text mt-4">
                 Argon is a great free UI package based on Bootstrap 4 that
                 includes the most important components and features.

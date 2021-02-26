@@ -24,9 +24,9 @@
             icon="ni ni-active-40"
           >
             <template slot="footer">
-              <span class="text-success mr-2"
-                ><i class="fa fa-arrow-up"></i> 3.48%</span
-              >
+              <span class="text-success mr-2">
+                <i class="fa fa-arrow-up"></i> 3.48%
+              </span>
               <span class="text-nowrap">Since last month</span>
             </template>
           </stats-card>
@@ -39,24 +39,19 @@
             icon="ni ni-chart-pie-35"
           >
             <template slot="footer">
-              <span class="text-success mr-2"
-                ><i class="fa fa-arrow-up"></i> 12.18%</span
-              >
+              <span class="text-success mr-2">
+                <i class="fa fa-arrow-up"></i> 12.18%
+              </span>
               <span class="text-nowrap">Since last month</span>
             </template>
           </stats-card>
         </div>
         <div class="col-xl-3 col-md-6">
-          <stats-card
-            title="Sales"
-            type="gradient-green"
-            sub-title="924"
-            icon="ni ni-money-coins"
-          >
+          <stats-card title="Sales" type="gradient-green" sub-title="924" icon="ni ni-money-coins">
             <template slot="footer">
-              <span class="text-danger mr-2"
-                ><i class="fa fa-arrow-down"></i> 5.72%</span
-              >
+              <span class="text-danger mr-2">
+                <i class="fa fa-arrow-down"></i> 5.72%
+              </span>
               <span class="text-nowrap">Since last month</span>
             </template>
           </stats-card>
@@ -69,9 +64,9 @@
             icon="ni ni-chart-bar-32"
           >
             <template slot="footer">
-              <span class="text-success mr-2"
-                ><i class="fa fa-arrow-up"></i> 54.8%</span
-              >
+              <span class="text-success mr-2">
+                <i class="fa fa-arrow-up"></i> 54.8%
+              </span>
               <span class="text-nowrap">Since last month</span>
             </template>
           </stats-card>
@@ -85,11 +80,7 @@
           <!-- Basic with list group -->
           <div class="card">
             <!-- Card image -->
-            <img
-              class="card-img-top"
-              src="img/theme/img-1-1000x600.jpg"
-              alt="Image placeholder"
-            />
+            <img class="card-img-top" src="img/theme/img-1-1000x600.jpg" alt="Image placeholder" />
             <!-- List group -->
             <ul class="list-group list-group-flush">
               <li class="list-group-item">Cras justo odio</li>
@@ -123,30 +114,20 @@
 
           <!--Profile card-->
           <div class="card card-profile">
-            <img
-              src="img/theme/img-1-1000x600.jpg"
-              alt="Image placeholder"
-              class="card-img-top"
-            />
+            <img src="img/theme/img-1-1000x600.jpg" alt="Image placeholder" class="card-img-top" />
             <div class="row justify-content-center">
               <div class="col-lg-3 order-lg-2">
                 <div class="card-profile-image">
                   <a href="#">
-                    <img src="img/theme/team-4.jpg" class="rounded-circle" />
+                    <img src="img/theme/team-benz.jpg" class="rounded-circle" />
                   </a>
                 </div>
               </div>
             </div>
-            <div
-              class="card-header text-center border-0 pt-8 pt-md-4 pb-0 pb-md-4"
-            >
+            <div class="card-header text-center border-0 pt-8 pt-md-4 pb-0 pb-md-4">
               <div class="d-flex justify-content-between">
-                <base-button type="info" size="sm" class="mr-4"
-                  >Connect</base-button
-                >
-                <base-button type="default" size="sm" class="float-right"
-                  >Message</base-button
-                >
+                <base-button type="info" size="sm" class="mr-4">Connect</base-button>
+                <base-button type="default" size="sm" class="float-right">Message</base-button>
               </div>
             </div>
             <div class="card-body pt-0">
@@ -170,7 +151,8 @@
               </div>
               <div class="text-center">
                 <h5 class="h3">
-                  Jessica Jones<span class="font-weight-light">, 27</span>
+                  Jessica Jones
+                  <span class="font-weight-light">, 27</span>
                 </h5>
                 <div class="h5 font-weight-300">
                   <i class="ni location_pin mr-2"></i>Bucharest, Romania
@@ -192,9 +174,7 @@
               soluta, optio minus ut reiciendis voluptates enim impedit
               veritatis officiis.
             </p>
-            <base-button type="primary" class="btn btn-primary"
-              >Go somewhere</base-button
-            >
+            <base-button type="primary" class="btn btn-primary">Go somewhere</base-button>
           </card>
 
           <!-- Contact card -->
@@ -209,10 +189,10 @@
               </div>
               <div class="col ml--2">
                 <h4 class="mb-0">
-                  <a href="#!">John Snow</a>
+                  <a href="#!">Karl Warren</a>
                 </h4>
                 <p class="text-sm text-muted mb-0">Working remoteley</p>
-                <span class="text-success">● </span>
+                <span class="text-success">●</span>
                 <small>Active</small>
               </div>
               <div class="col-auto">
@@ -234,27 +214,16 @@
             <div class="pt-4 text-center">
               <h5 class="h3 title">
                 <span class="d-block mb-1">Ryan Tompson</span>
-                <small class="h4 font-weight-light text-muted"
-                  >Web Developer</small
-                >
+                <small class="h4 font-weight-light text-muted">Web Developer</small>
               </h5>
               <div class="mt-3">
-                <a
-                  href="#"
-                  class="btn btn-twitter btn-icon-only rounded-circle"
-                >
+                <a href="#" class="btn btn-twitter btn-icon-only rounded-circle">
                   <i class="fab fa-twitter"></i>
                 </a>
-                <a
-                  href="#"
-                  class="btn btn-facebook btn-icon-only rounded-circle"
-                >
+                <a href="#" class="btn btn-facebook btn-icon-only rounded-circle">
                   <i class="fab fa-facebook"></i>
                 </a>
-                <a
-                  href="#"
-                  class="btn btn-dribbble btn-icon-only rounded-circle"
-                >
+                <a href="#" class="btn btn-dribbble btn-icon-only rounded-circle">
                   <i class="fab fa-dribbble"></i>
                 </a>
               </div>
@@ -263,17 +232,11 @@
           <!-- Image-Text card -->
           <div class="card">
             <!-- Card image -->
-            <img
-              class="card-img-top"
-              src="img/theme/img-1-1000x900.jpg"
-              alt="Image placeholder"
-            />
+            <img class="card-img-top" src="img/theme/img-1-1000x900.jpg" alt="Image placeholder" />
             <!-- Card body -->
             <div class="card-body">
               <h5 class="h2 card-title mb-0">Get started with Argon</h5>
-              <small class="text-muted"
-                >by John Snow on Oct 29th at 10:23 AM</small
-              >
+              <small class="text-muted">by Karl Warren on Oct 29th at 10:23 AM</small>
               <p class="card-text mt-4">
                 Argon is a great free UI package based on Bootstrap 4 that
                 includes the most important components and features.
@@ -291,7 +254,8 @@
                 posuere erat a ante.
               </p>
               <footer class="blockquote-footer text-danger">
-                Someone famous in <cite title="Source Title">Source Title</cite>
+                Someone famous in
+                <cite title="Source Title">Source Title</cite>
               </footer>
             </blockquote>
           </card>
@@ -306,9 +270,7 @@
             class="card-pricing border-0 text-center mb-4"
           >
             <!--Header-->
-            <h4 slot="header" class="text-uppercase ls-1 text-white py-3 mb-0">
-              Bravo pack
-            </h4>
+            <h4 slot="header" class="text-uppercase ls-1 text-white py-3 mb-0">Bravo pack</h4>
             <!--Card Body-->
             <div class="display-2 text-white">$49</div>
             <span class="text-white">per application</span>
@@ -316,55 +278,41 @@
               <li>
                 <div class="d-flex align-items-center">
                   <div>
-                    <div
-                      class="icon icon-xs icon-shape bg-white shadow rounded-circle"
-                    >
+                    <div class="icon icon-xs icon-shape bg-white shadow rounded-circle">
                       <i class="fas fa-terminal"></i>
                     </div>
                   </div>
                   <div>
-                    <span class="pl-2 text-sm text-white"
-                      >Complete documentation</span
-                    >
+                    <span class="pl-2 text-sm text-white">Complete documentation</span>
                   </div>
                 </div>
               </li>
               <li>
                 <div class="d-flex align-items-center">
                   <div>
-                    <div
-                      class="icon icon-xs icon-shape bg-white shadow rounded-circle"
-                    >
+                    <div class="icon icon-xs icon-shape bg-white shadow rounded-circle">
                       <i class="fas fa-pen-fancy"></i>
                     </div>
                   </div>
                   <div>
-                    <span class="pl-2 text-sm text-white"
-                      >Working materials in Sketch</span
-                    >
+                    <span class="pl-2 text-sm text-white">Working materials in Sketch</span>
                   </div>
                 </div>
               </li>
               <li>
                 <div class="d-flex align-items-center">
                   <div>
-                    <div
-                      class="icon icon-xs icon-shape bg-white shadow rounded-circle"
-                    >
+                    <div class="icon icon-xs icon-shape bg-white shadow rounded-circle">
                       <i class="fas fa-hdd"></i>
                     </div>
                   </div>
                   <div>
-                    <span class="pl-2 text-sm text-white"
-                      >2GB cloud storage</span
-                    >
+                    <span class="pl-2 text-sm text-white">2GB cloud storage</span>
                   </div>
                 </div>
               </li>
             </ul>
-            <base-button type="primary" class="mb-3"
-              >Start free trial</base-button
-            >
+            <base-button type="primary" class="mb-3">Start free trial</base-button>
             <!--Footer-->
             <a slot="footer" href="#!" class="text-white">Request a demo</a>
           </card>
@@ -391,11 +339,7 @@
           </card>
           <!-- Image overlay -->
           <div class="card bg-dark text-white border-0">
-            <img
-              class="card-img"
-              src="img/theme/img-1-1000x600.jpg"
-              alt="Card image"
-            />
+            <img class="card-img" src="img/theme/img-1-1000x600.jpg" alt="Card image" />
             <div class="card-img-overlay d-flex align-items-center">
               <div>
                 <h5 class="h2 card-title text-white mb-2">Card title</h5>
@@ -404,9 +348,7 @@
                   lead-in to additional content. This content is a little bit
                   longer.
                 </p>
-                <p class="card-text text-sm font-weight-bold">
-                  Last updated 3 mins ago
-                </p>
+                <p class="card-text text-sm font-weight-bold">Last updated 3 mins ago</p>
               </div>
             </div>
           </div>
@@ -417,12 +359,7 @@
             class="card-pricing border-0 text-center mb-4"
           >
             <!--Header-->
-            <h4
-              slot="header"
-              class="text-uppercase ls-1 text-primary py-3 mb-0"
-            >
-              Bravo pack
-            </h4>
+            <h4 slot="header" class="text-uppercase ls-1 text-primary py-3 mb-0">Bravo pack</h4>
 
             <!--Body-->
             <div class="display-2">$49</div>
@@ -452,9 +389,7 @@
                     </div>
                   </div>
                   <div>
-                    <span class="pl-2 text-sm"
-                      >Working materials in Sketch</span
-                    >
+                    <span class="pl-2 text-sm">Working materials in Sketch</span>
                   </div>
                 </div>
               </li>
@@ -473,9 +408,7 @@
                 </div>
               </li>
             </ul>
-            <base-button type="primary" class="mb-3"
-              >Start free trial</base-button
-            >
+            <base-button type="primary" class="mb-3">Start free trial</base-button>
             <!--Footer-->
             <a slot="footer" href="#!" class="text-muted">Request a demo</a>
           </card>

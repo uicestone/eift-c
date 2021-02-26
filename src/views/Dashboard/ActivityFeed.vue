@@ -9,13 +9,15 @@
           <img src="img/theme/team-1.jpg" class="avatar" />
         </a>
         <div class="mx-3">
-          <a href="#" class="text-dark font-weight-600 text-sm">John Snow</a>
+          <a href="#" class="text-dark font-weight-600 text-sm">Karl Warren</a>
           <small class="d-block text-muted">3 days ago</small>
         </div>
       </div>
       <div class="text-right ml-auto">
         <button type="button" class="btn btn-sm btn-primary btn-icon">
-          <span class="btn-inner--icon"><i class="ni ni-fat-add"></i></span>
+          <span class="btn-inner--icon">
+            <i class="ni ni-fat-add"></i>
+          </span>
           <span class="btn-inner--text">Follow</span>
         </button>
       </div>
@@ -27,11 +29,7 @@
         and persuade recruiters to continue reading your CV because you’re
         telling them from the off exactly why they should hire you.
       </p>
-      <img
-        alt="Image placeholder"
-        src="img/theme/img-1-1000x600.jpg"
-        class="img-fluid rounded"
-      />
+      <img alt="Image placeholder" src="img/theme/img-1-1000x600.jpg" class="img-fluid rounded" />
       <div class="row align-items-center my-3 pb-3 border-bottom">
         <div class="col-sm-6">
           <div class="icon-actions">
@@ -58,11 +56,7 @@
                 data-toggle="tooltip"
                 data-original-title="Jessica Rowland"
               >
-                <img
-                  alt="Image placeholder"
-                  src="img/theme/team-1.jpg"
-                  class=""
-                />
+                <img alt="Image placeholder" src="img/theme/team-1.jpg" class />
               </a>
               <a
                 href="#"
@@ -70,11 +64,7 @@
                 data-toggle="tooltip"
                 data-original-title="Audrey Love"
               >
-                <img
-                  alt="Image placeholder"
-                  src="img/theme/team-2.jpg"
-                  class="rounded-circle"
-                />
+                <img alt="Image placeholder" src="img/theme/team-2.jpg" class="rounded-circle" />
               </a>
               <a
                 href="#"
@@ -82,11 +72,7 @@
                 data-toggle="tooltip"
                 data-original-title="Michael Lewis"
               >
-                <img
-                  alt="Image placeholder"
-                  src="img/theme/team-3.jpg"
-                  class="rounded-circle"
-                />
+                <img alt="Image placeholder" src="img/theme/team-3.jpg" class="rounded-circle" />
               </a>
             </div>
             <small class="pl-2 font-weight-bold">and 30+ more</small>
@@ -119,11 +105,7 @@
           />
           <div class="media-body">
             <form>
-              <textarea
-                class="form-control"
-                placeholder="Write your comment"
-                rows="1"
-              ></textarea>
+              <textarea class="form-control" placeholder="Write your comment" rows="1"></textarea>
             </form>
           </div>
         </div>

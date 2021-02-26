@@ -3,75 +3,55 @@
     <base-header class="pb-6">
       <div class="row align-items-center py-4">
         <div class="col-lg-6 col-7">
-          <h6 class="h2 text-white d-inline-block mb-0">Default</h6>
+          <h6 class="h2 text-white d-inline-block mb-0">数据统计</h6>
           <nav aria-label="breadcrumb" class="d-none d-md-inline-block ml-md-4">
             <route-bread-crumb></route-bread-crumb>
           </nav>
         </div>
         <div class="col-lg-6 col-5 text-right">
-          <base-button size="sm" type="neutral">New</base-button>
-          <base-button size="sm" type="neutral">Filters</base-button>
+          <!-- <base-button size="sm" type="neutral">New</base-button>
+          <base-button size="sm" type="neutral">Filters</base-button>-->
         </div>
       </div>
       <!-- Card stats -->
       <div class="row">
         <div class="col-xl-3 col-md-6">
-          <stats-card
-            title="Total traffic"
-            type="gradient-red"
-            sub-title="350,897"
-            icon="ni ni-active-40"
-          >
+          <stats-card title="投资机构" type="gradient-red" sub-title="3,508" icon="ni ni-planet">
             <template slot="footer">
-              <span class="text-success mr-2"
-                ><i class="fa fa-arrow-up"></i> 3.48%</span
-              >
-              <span class="text-nowrap">Since last month</span>
+              <span class="text-red mr-2">
+                <i class="fa fa-arrow-up"></i> 3.48%
+              </span>
+              <span class="text-nowrap">环比</span>
             </template>
           </stats-card>
         </div>
         <div class="col-xl-3 col-md-6">
-          <stats-card
-            title="Total traffic"
-            type="gradient-orange"
-            sub-title="2,356"
-            icon="ni ni-chart-pie-35"
-          >
+          <stats-card title="被投企业" type="gradient-orange" sub-title="2,356" icon="ni ni-building">
             <template slot="footer">
-              <span class="text-success mr-2"
-                ><i class="fa fa-arrow-up"></i> 12.18%</span
-              >
-              <span class="text-nowrap">Since last month</span>
+              <span class="text-red mr-2">
+                <i class="fa fa-arrow-up"></i> 12.18%
+              </span>
+              <span class="text-nowrap">环比</span>
             </template>
           </stats-card>
         </div>
         <div class="col-xl-3 col-md-6">
-          <stats-card
-            title="Sales"
-            type="gradient-green"
-            sub-title="924"
-            icon="ni ni-money-coins"
-          >
+          <stats-card title="跟进沟通" type="gradient-green" sub-title="924" icon="ni ni-delivery-fast">
             <template slot="footer">
-              <span class="text-danger mr-2"
-                ><i class="fa fa-arrow-down"></i> 5.72%</span
-              >
-              <span class="text-nowrap">Since last month</span>
+              <span class="text-green mr-2">
+                <i class="fa fa-arrow-down"></i> 5.72%
+              </span>
+              <span class="text-nowrap">环比</span>
             </template>
           </stats-card>
         </div>
         <div class="col-xl-3 col-md-6">
-          <stats-card
-            title="Performance"
-            type="gradient-info"
-            sub-title="49,65%"
-            icon="ni ni-chart-bar-32"
-          >
+          <stats-card title="有效沟通" type="gradient-info" sub-title="87.23%" icon="ni ni-headphones">
             <template slot="footer">
-              <span class="text-success mr-2"
-                ><i class="fa fa-arrow-up"></i> 54.8%</span
-              >
-              <span class="text-nowrap">Since last month</span>
+              <span class="text-red mr-2">
+                <i class="fa fa-arrow-up"></i> 54.8%
+              </span>
+              <span class="text-nowrap">环比</span>
             </template>
           </stats-card>
         </div>
@@ -120,8 +100,7 @@
               ref="bigChart"
               :chart-data="bigLineChart.chartData"
               :extra-options="bigLineChart.extraOptions"
-            >
-            </line-chart>
+            ></line-chart>
           </card>
         </div>
 
@@ -134,12 +113,7 @@
               </div>
             </div>
 
-            <bar-chart
-              :height="350"
-              ref="barChart"
-              :chart-data="redBarChart.chartData"
-            >
-            </bar-chart>
+            <bar-chart :height="350" ref="barChart" :chart-data="redBarChart.chartData"></bar-chart>
           </card>
         </div>
       </div>
@@ -181,43 +155,29 @@
         <div class="col-xl-7">
           <light-table></light-table>
           <div class="card-deck">
-            <card gradient="default" no-body="">
+            <card gradient="default" no-body>
               <div class="card-body">
                 <div class="mb-2">
                   <sup class="text-white">$</sup>
                   <span class="h2 text-white">3,300</span>
-                  <div class="text-light mt-2 text-sm">
-                    Your current balance
-                  </div>
+                  <div class="text-light mt-2 text-sm">Your current balance</div>
                   <div>
                     <span class="text-success font-weight-600">+ 15%</span>
                     <span class="text-light">($250)</span>
                   </div>
                 </div>
-                <button class="btn btn-sm btn-block btn-neutral">
-                  Add credit
-                </button>
+                <button class="btn btn-sm btn-block btn-neutral">Add credit</button>
               </div>
 
               <div class="card-body">
                 <div class="row">
                   <div class="col">
                     <small class="text-light">Orders: 60%</small>
-                    <base-progress
-                      :value="60"
-                      size="xs"
-                      progress-classes="my-2"
-                      type="success"
-                    />
+                    <base-progress :value="60" size="xs" progress-classes="my-2" type="success" />
                   </div>
                   <div class="col">
                     <small class="text-light">Sales: 40%</small>
-                    <base-progress
-                      :value="40"
-                      size="xs"
-                      progress-classes="my-2"
-                      type="warning"
-                    />
+                    <base-progress :value="40" size="xs" progress-classes="my-2" type="warning" />
                   </div>
                 </div>
               </div>
@@ -226,23 +186,20 @@
             <card gradient="danger">
               <div class="row justify-content-between align-items-center">
                 <div class="col">
-                  <img
-                    src="img/icons/cards/bitcoin.png"
-                    alt="Image placeholder"
-                  />
+                  <img src="img/icons/cards/bitcoin.png" alt="Image placeholder" />
                 </div>
                 <div class="col-auto">
                   <span class="badge badge-lg badge-success">Active</span>
                 </div>
               </div>
               <div class="my-4">
-                <span class="h6 surtitle text-light"> Username </span>
+                <span class="h6 surtitle text-light">Username</span>
                 <div class="h1 text-white">@johnsnow</div>
               </div>
               <div class="row">
                 <div class="col">
                   <span class="h6 surtitle text-light">Name</span>
-                  <span class="d-block h3 text-white">John Snow</span>
+                  <span class="d-block h3 text-white">Karl Warren</span>
                 </div>
               </div>
             </card>

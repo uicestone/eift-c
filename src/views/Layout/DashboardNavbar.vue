@@ -20,7 +20,7 @@
               <i class="fas fa-search"></i>
             </span>
           </div>
-          <input class="form-control" placeholder="Search" type="text" />
+          <input class="form-control" placeholder="搜索" type="text" />
         </div>
       </div>
       <button
@@ -54,12 +54,7 @@
         </div>
       </li>
       <li class="nav-item d-sm-none">
-        <a
-          class="nav-link"
-          href="#"
-          data-action="search-show"
-          data-target="#navbar-search-main"
-        >
+        <a class="nav-link" href="#" data-action="search-show" data-target="#navbar-search-main">
           <i class="ni ni-zoom-split-in"></i>
         </a>
       </li>
@@ -75,8 +70,8 @@
           <!-- Dropdown header -->
           <div class="px-3 py-3">
             <h6 class="text-sm text-muted m-0">
-              You have
-              <strong class="text-primary">13</strong> notifications.
+              你有
+              <strong class="text-primary">13</strong> 条通知.
             </h6>
           </div>
           <!-- List group -->
@@ -92,135 +87,21 @@
                   />
                 </div>
                 <div class="col ml--2">
-                  <div
-                    class="d-flex justify-content-between align-items-center"
-                  >
+                  <div class="d-flex justify-content-between align-items-center">
                     <div>
-                      <h4 class="mb-0 text-sm">John Snow</h4>
+                      <h4 class="mb-0 text-sm">被投企业</h4>
                     </div>
                     <div class="text-right text-muted">
-                      <small>2 hrs ago</small>
+                      <small>刚刚</small>
                     </div>
                   </div>
-                  <p class="text-sm mb-0">
-                    Let's meet at Starbucks at 11:30. Wdyt?
-                  </p>
-                </div>
-              </div>
-            </a>
-            <a href="#!" class="list-group-item list-group-item-action">
-              <div class="row align-items-center">
-                <div class="col-auto">
-                  <!-- Avatar -->
-                  <img
-                    alt="Image placeholder"
-                    src="img/theme/team-2.jpg"
-                    class="avatar rounded-circle"
-                  />
-                </div>
-                <div class="col ml--2">
-                  <div
-                    class="d-flex justify-content-between align-items-center"
-                  >
-                    <div>
-                      <h4 class="mb-0 text-sm">John Snow</h4>
-                    </div>
-                    <div class="text-right text-muted">
-                      <small>3 hrs ago</small>
-                    </div>
-                  </div>
-                  <p class="text-sm mb-0">
-                    A new issue has been reported for Argon.
-                  </p>
-                </div>
-              </div>
-            </a>
-            <a href="#!" class="list-group-item list-group-item-action">
-              <div class="row align-items-center">
-                <div class="col-auto">
-                  <!-- Avatar -->
-                  <img
-                    alt="Image placeholder"
-                    src="img/theme/team-3.jpg"
-                    class="avatar rounded-circle"
-                  />
-                </div>
-                <div class="col ml--2">
-                  <div
-                    class="d-flex justify-content-between align-items-center"
-                  >
-                    <div>
-                      <h4 class="mb-0 text-sm">John Snow</h4>
-                    </div>
-                    <div class="text-right text-muted">
-                      <small>5 hrs ago</small>
-                    </div>
-                  </div>
-                  <p class="text-sm mb-0">Your posts have been liked a lot.</p>
-                </div>
-              </div>
-            </a>
-            <a href="#!" class="list-group-item list-group-item-action">
-              <div class="row align-items-center">
-                <div class="col-auto">
-                  <!-- Avatar -->
-                  <img
-                    alt="Image placeholder"
-                    src="img/theme/team-4.jpg"
-                    class="avatar rounded-circle"
-                  />
-                </div>
-                <div class="col ml--2">
-                  <div
-                    class="d-flex justify-content-between align-items-center"
-                  >
-                    <div>
-                      <h4 class="mb-0 text-sm">John Snow</h4>
-                    </div>
-                    <div class="text-right text-muted">
-                      <small>2 hrs ago</small>
-                    </div>
-                  </div>
-                  <p class="text-sm mb-0">
-                    Let's meet at Starbucks at 11:30. Wdyt?
-                  </p>
-                </div>
-              </div>
-            </a>
-            <a href="#!" class="list-group-item list-group-item-action">
-              <div class="row align-items-center">
-                <div class="col-auto">
-                  <!-- Avatar -->
-                  <img
-                    alt="Image placeholder"
-                    src="img/theme/team-5.jpg"
-                    class="avatar rounded-circle"
-                  />
-                </div>
-                <div class="col ml--2">
-                  <div
-                    class="d-flex justify-content-between align-items-center"
-                  >
-                    <div>
-                      <h4 class="mb-0 text-sm">John Snow</h4>
-                    </div>
-                    <div class="text-right text-muted">
-                      <small>3 hrs ago</small>
-                    </div>
-                  </div>
-                  <p class="text-sm mb-0">
-                    A new issue has been reported for Argon.
-                  </p>
+                  <p class="text-sm mb-0">确认参加会议</p>
                 </div>
               </div>
             </a>
           </div>
           <!-- View all -->
-          <a
-            href="#!"
-            class="dropdown-item text-center text-primary font-weight-bold py-3"
-            >View all</a
-          >
+          <a href="#!" class="dropdown-item text-center text-primary font-weight-bold py-3">查看全部</a>
         </template>
       </base-dropdown>
       <base-dropdown
@@ -234,52 +115,22 @@
         <template>
           <div class="row shortcuts px-4">
             <a href="#!" class="col-4 shortcut-item">
-              <span
-                class="shortcut-media avatar rounded-circle bg-gradient-red"
-              >
-                <i class="ni ni-calendar-grid-58"></i>
-              </span>
-              <small>Calendar</small>
-            </a>
-            <a href="#!" class="col-4 shortcut-item">
-              <span
-                class="shortcut-media avatar rounded-circle bg-gradient-orange"
-              >
+              <span class="shortcut-media avatar rounded-circle bg-gradient-orange">
                 <i class="ni ni-email-83"></i>
               </span>
-              <small>Email</small>
+              <small>邮箱</small>
             </a>
             <a href="#!" class="col-4 shortcut-item">
-              <span
-                class="shortcut-media avatar rounded-circle bg-gradient-info"
-              >
-                <i class="ni ni-credit-card"></i>
-              </span>
-              <small>Payments</small>
-            </a>
-            <a href="#!" class="col-4 shortcut-item">
-              <span
-                class="shortcut-media avatar rounded-circle bg-gradient-green"
-              >
+              <span class="shortcut-media avatar rounded-circle bg-gradient-green">
                 <i class="ni ni-books"></i>
               </span>
-              <small>Reports</small>
+              <small>资料</small>
             </a>
             <a href="#!" class="col-4 shortcut-item">
-              <span
-                class="shortcut-media avatar rounded-circle bg-gradient-purple"
-              >
+              <span class="shortcut-media avatar rounded-circle bg-gradient-purple">
                 <i class="ni ni-pin-3"></i>
               </span>
-              <small>Maps</small>
-            </a>
-            <a href="#!" class="col-4 shortcut-item">
-              <span
-                class="shortcut-media avatar rounded-circle bg-gradient-yellow"
-              >
-                <i class="ni ni-basket"></i>
-              </span>
-              <small>Shop</small>
+              <small>书签</small>
             </a>
           </div>
         </template>
@@ -296,10 +147,10 @@
         <a href="#" class="nav-link pr-0" @click.prevent slot="title-container">
           <div class="media align-items-center">
             <span class="avatar avatar-sm rounded-circle">
-              <img alt="Image placeholder" src="img/theme/team-4.jpg" />
+              <img alt="Image placeholder" src="img/theme/team-benz.jpg" />
             </span>
             <div class="media-body ml-2 d-none d-lg-block">
-              <span class="mb-0 text-sm font-weight-bold">John Snow</span>
+              <span class="mb-0 text-sm font-weight-bold">Karl Warren</span>
             </div>
           </div>
         </a>

@@ -16,19 +16,20 @@
               <img alt="Image placeholder" :src="row.img" />
             </a>
             <div class="media-body">
-              <span class="font-weight-600 name mb-0 text-sm">{{
+              <span class="font-weight-600 name mb-0 text-sm">
+                {{
                 row.title
-              }}</span>
+                }}
+              </span>
             </div>
           </div>
         </template>
       </el-table-column>
-      <el-table-column label="Budget" prop="budget" min-width="140px" sortable>
-      </el-table-column>
+      <el-table-column label="Budget" prop="budget" min-width="140px" sortable></el-table-column>
 
       <el-table-column label="Status" min-width="170px" prop="status" sortable>
         <template v-slot="{ row }">
-          <badge class="badge-dot mr-4" type="">
+          <badge class="badge-dot mr-4" type>
             <i :class="`bg-${row.statusType}`"></i>
             <span class="status">{{ row.status }}</span>
           </badge>
@@ -67,17 +68,12 @@
             data-toggle="tooltip"
             data-original-title="Jessica Doe"
           >
-            <img alt="Image placeholder" src="img/theme/team-4.jpg" />
+            <img alt="Image placeholder" src="img/theme/team-benz.jpg" />
           </a>
         </div>
       </el-table-column>
 
-      <el-table-column
-        label="Completion"
-        prop="completion"
-        min-width="240px"
-        sortable
-      >
+      <el-table-column label="Completion" prop="completion" min-width="240px" sortable>
         <template v-slot="{ row }">
           <div class="d-flex align-items-center">
             <span class="completion mr-2">{{ row.completion }}%</span>
@@ -93,10 +89,7 @@
             <span class="btn btn-sm btn-icon-only text-light">
               <i class="fas fa-ellipsis-v mt-2"></i>
             </span>
-            <el-dropdown-menu
-              class="dropdown-menu dropdown-menu-arrow show"
-              slot="dropdown"
-            >
+            <el-dropdown-menu class="dropdown-menu dropdown-menu-arrow show" slot="dropdown">
               <a class="dropdown-item" href="#">Action</a>
               <a class="dropdown-item" href="#">Another action</a>
               <a class="dropdown-item" href="#">Something else here</a>

@@ -253,11 +253,11 @@ const routes = [
     path: "/",
     component: DashboardLayout,
     redirect: "/dashboard",
-    name: "Dashboard layout",
+    name: "首页",
     children: [
       {
         path: "dashboard",
-        name: "Dashboard",
+        name: "数据统计",
         component: Dashboard,
       },
       {

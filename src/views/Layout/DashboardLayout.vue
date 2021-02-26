@@ -5,123 +5,137 @@
       <template slot="links">
         <sidebar-item
           :link="{
+          name: '数据统计',
+          icon: 'ni ni-chart-bar-32 text-primary',
+          path: '/dashboard'
+        }"
+        ></sidebar-item>
+        <sidebar-item
+          :link="{
+          name: '投资机构',
+          icon: 'ni ni-planet text-primary',
+          path: '/capital'
+        }"
+        ></sidebar-item>
+        <sidebar-item
+          :link="{
+          name: '被投企业',
+          icon: 'ni ni-building text-primary',
+          path: '/business'
+        }"
+        ></sidebar-item>
+        <sidebar-item
+          :link="{
+          name: '投资跟进',
+          icon: 'ni ni-delivery-fast text-primary',
+          path: '/investment'
+        }"
+        ></sidebar-item>
+        <sidebar-item
+          :link="{
+          name: '用户管理',
+          icon: 'ni ni-single-02 text-primary',
+          path: '/user'
+        }"
+        ></sidebar-item>
+        <template v-if="isDev">
+          <sidebar-item
+            :link="{
             name: 'Dashboards',
             icon: 'ni ni-shop text-primary',
           }"
-        >
-          <sidebar-item
-            :link="{ name: 'Dashboard', path: '/dashboard' }"
-          ></sidebar-item>
-          <sidebar-item
-            :link="{ name: 'Alternative', path: '/alternative' }"
-          ></sidebar-item>
-        </sidebar-item>
+          >
+            <sidebar-item :link="{ name: 'Dashboard', path: '/dashboard' }"></sidebar-item>
+            <sidebar-item :link="{ name: 'Alternative', path: '/alternative' }"></sidebar-item>
+          </sidebar-item>
 
-        <sidebar-item
-          :link="{
+          <sidebar-item
+            :link="{
             name: 'Examples',
             icon: 'ni ni-ungroup text-orange',
           }"
-        >
-          <sidebar-item :link="{ name: 'Pricing', path: '/pricing' }" />
-          <sidebar-item :link="{ name: 'Login', path: '/login' }" />
-          <sidebar-item :link="{ name: 'Register', path: '/register' }" />
-          <sidebar-item :link="{ name: 'Lock', path: '/lock' }" />
-          <sidebar-item :link="{ name: 'Timeline', path: '/pages/timeline' }" />
-          <sidebar-item :link="{ name: 'Profile', path: '/pages/user' }" />
-        </sidebar-item>
+          >
+            <sidebar-item :link="{ name: 'Pricing', path: '/pricing' }" />
+            <sidebar-item :link="{ name: 'Login', path: '/login' }" />
+            <sidebar-item :link="{ name: 'Register', path: '/register' }" />
+            <sidebar-item :link="{ name: 'Lock', path: '/lock' }" />
+            <sidebar-item :link="{ name: 'Timeline', path: '/pages/timeline' }" />
+            <sidebar-item :link="{ name: 'Profile', path: '/pages/user' }" />
+          </sidebar-item>
 
-        <sidebar-item
-          :link="{
+          <sidebar-item
+            :link="{
             name: 'Components',
             icon: 'ni ni-ui-04 text-info',
           }"
-        >
-          <sidebar-item
-            :link="{ name: 'Buttons', path: '/components/buttons' }"
-          />
-          <sidebar-item :link="{ name: 'Cards', path: '/components/cards' }" />
-          <sidebar-item
-            :link="{ name: 'Grid', path: '/components/grid-system' }"
-          />
-          <sidebar-item
-            :link="{ name: 'Notifications', path: '/components/notifications' }"
-          />
-          <sidebar-item :link="{ name: 'Icons', path: '/components/icons' }" />
-          <sidebar-item
-            :link="{ name: 'Typography', path: '/components/typography' }"
-          />
+          >
+            <sidebar-item :link="{ name: 'Buttons', path: '/components/buttons' }" />
+            <sidebar-item :link="{ name: 'Cards', path: '/components/cards' }" />
+            <sidebar-item :link="{ name: 'Grid', path: '/components/grid-system' }" />
+            <sidebar-item :link="{ name: 'Notifications', path: '/components/notifications' }" />
+            <sidebar-item :link="{ name: 'Icons', path: '/components/icons' }" />
+            <sidebar-item :link="{ name: 'Typography', path: '/components/typography' }" />
 
-          <sidebar-item :link="{ name: 'Multi Level' }">
-            <sidebar-item :link="{ name: 'Third level menu', path: '#!' }" />
-            <sidebar-item :link="{ name: 'Just another link', path: '#a' }" />
-            <sidebar-item :link="{ name: 'One last link', path: '#b' }" />
+            <sidebar-item :link="{ name: 'Multi Level' }">
+              <sidebar-item :link="{ name: 'Third level menu', path: '#!' }" />
+              <sidebar-item :link="{ name: 'Just another link', path: '#a' }" />
+              <sidebar-item :link="{ name: 'One last link', path: '#b' }" />
+            </sidebar-item>
           </sidebar-item>
-        </sidebar-item>
-        <sidebar-item
-          :link="{
+          <sidebar-item
+            :link="{
             name: 'Forms',
             icon: 'ni ni-single-copy-04 text-pink',
           }"
-        >
-          <sidebar-item :link="{ name: 'Elements', path: '/forms/elements' }" />
-          <sidebar-item
-            :link="{ name: 'Components', path: '/forms/components' }"
-          />
-          <sidebar-item
-            :link="{ name: 'Validation', path: '/forms/validation' }"
-          />
-        </sidebar-item>
+          >
+            <sidebar-item :link="{ name: 'Elements', path: '/forms/elements' }" />
+            <sidebar-item :link="{ name: 'Components', path: '/forms/components' }" />
+            <sidebar-item :link="{ name: 'Validation', path: '/forms/validation' }" />
+          </sidebar-item>
 
-        <sidebar-item
-          :link="{
+          <sidebar-item
+            :link="{
             name: 'Tables',
             icon: 'ni ni-align-left-2 text-default',
           }"
-        >
-          <sidebar-item :link="{ name: 'Tables', path: '/tables/regular' }" />
-          <sidebar-item
-            :link="{ name: 'Sortable', path: '/tables/sortable' }"
-          />
-          <sidebar-item
-            :link="{ name: 'Paginated Tables', path: '/tables/paginated' }"
-          />
-        </sidebar-item>
+          >
+            <sidebar-item :link="{ name: 'Tables', path: '/tables/regular' }" />
+            <sidebar-item :link="{ name: 'Sortable', path: '/tables/sortable' }" />
+            <sidebar-item :link="{ name: 'Paginated Tables', path: '/tables/paginated' }" />
+          </sidebar-item>
 
-        <sidebar-item
-          :link="{
+          <sidebar-item
+            :link="{
             name: 'Maps',
             icon: 'ni ni-map-big text-primary',
           }"
-        >
-          <sidebar-item :link="{ name: 'Google', path: '/maps/google' }" />
-          <sidebar-item :link="{ name: 'Vector', path: '/maps/vector' }" />
-        </sidebar-item>
-        <sidebar-item
-          :link="{
+          >
+            <sidebar-item :link="{ name: 'Google', path: '/maps/google' }" />
+            <sidebar-item :link="{ name: 'Vector', path: '/maps/vector' }" />
+          </sidebar-item>
+          <sidebar-item
+            :link="{
             name: 'Widgets',
             icon: 'ni ni-archive-2 text-green',
             path: '/widgets',
           }"
-        >
-        </sidebar-item>
-        <sidebar-item
-          :link="{
+          ></sidebar-item>
+          <sidebar-item
+            :link="{
             name: 'Charts',
             icon: 'ni ni-chart-pie-35 text-info',
             path: '/charts',
           }"
-        >
-        </sidebar-item>
+          ></sidebar-item>
 
-        <sidebar-item
-          :link="{
+          <sidebar-item
+            :link="{
             name: 'Calendar',
             icon: 'ni ni-calendar-grid-58 text-red',
             path: '/calendar',
           }"
-        >
-        </sidebar-item>
+          ></sidebar-item>
+        </template>
       </template>
 
       <template slot="links-after">
@@ -214,6 +228,11 @@ export default {
     DashboardNavbar,
     ContentFooter,
     FadeTransition,
+  },
+  data: () => {
+    return {
+      isDev: process.env.NODE_ENV === "development",
+    };
   },
   methods: {
     initScrollbar() {
