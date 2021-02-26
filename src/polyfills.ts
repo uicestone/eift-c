@@ -1,9 +1,9 @@
 /* eslint-disable */
-import 'es6-promise/auto'
+import "es6-promise/auto";
 
-export default (function initPollyFills () {
+export default (function initPollyFills() {
   if (!Array.prototype.find) {
-    Object.defineProperty(Array.prototype, 'find', {
+    Object.defineProperty(Array.prototype, "find", {
       value: function (predicate) {
         // 1. Let O be ? ToObject(this value).
         if (this == null) {
@@ -16,8 +16,8 @@ export default (function initPollyFills () {
         var len = o.length >>> 0;
 
         // 3. If IsCallable(predicate) is false, throw a TypeError exception.
-        if (typeof predicate !== 'function') {
-          throw new TypeError('predicate must be a function');
+        if (typeof predicate !== "function") {
+          throw new TypeError("predicate must be a function");
         }
 
         // 4. If thisArg was supplied, let T be thisArg; else let T be undefined.
@@ -42,16 +42,18 @@ export default (function initPollyFills () {
 
         // 7. Return undefined.
         return undefined;
-      }
+      },
     });
   }
-  if (typeof Object.assign !== 'function') {
+  if (typeof Object.assign !== "function") {
     // Must be writable: true, enumerable: false, configurable: true
     Object.defineProperty(Object, "assign", {
-      value: function assign (target, varArgs) { // .length of function is 2
-        'use strict';
-        if (target == null) { // TypeError if undefined or null
-          throw new TypeError('Cannot convert undefined or null to object');
+      value: function assign(target, varArgs) {
+        // .length of function is 2
+        "use strict";
+        if (target == null) {
+          // TypeError if undefined or null
+          throw new TypeError("Cannot convert undefined or null to object");
         }
 
         var to = Object(target);
@@ -59,7 +61,8 @@ export default (function initPollyFills () {
         for (var index = 1; index < arguments.length; index++) {
           var nextSource = arguments[index];
 
-          if (nextSource != null) { // Skip over if undefined or null
+          if (nextSource != null) {
+            // Skip over if undefined or null
             for (var nextKey in nextSource) {
               // Avoid bugs when hasOwnProperty is shadowed
               if (Object.prototype.hasOwnProperty.call(nextSource, nextKey)) {
@@ -71,18 +74,18 @@ export default (function initPollyFills () {
         return to;
       },
       writable: true,
-      configurable: true
+      configurable: true,
     });
   }
   if (!String.prototype.startsWith) {
-    String.prototype.startsWith = function(search, pos) {
+    String.prototype.startsWith = function (search, pos) {
       return this.substr(!pos || pos < 0 ? 0 : +pos, search.length) === search;
     };
   }
   if (!String.prototype.includes) {
-    String.prototype.includes = function(search, start) {
-      'use strict';
-      if (typeof start !== 'number') {
+    String.prototype.includes = function (search, start) {
+      "use strict";
+      if (typeof start !== "number") {
         start = 0;
       }
 
@@ -93,4 +96,4 @@ export default (function initPollyFills () {
       }
     };
   }
-}())
+})();

@@ -1,4 +1,4 @@
-import Fuse from 'fuse.js';
+import Fuse from "fuse.js";
 export default {
   computed: {
     /***
@@ -10,7 +10,7 @@ export default {
         result = this.searchedData;
       } else {
         if (this.searchQuery) {
-          result = []
+          result = [];
         }
       }
       return result.slice(this.from, this.to);
@@ -29,7 +29,7 @@ export default {
       return this.searchedData.length > 0
         ? this.searchedData.length
         : this.tableData.length;
-    }
+    },
   },
   data() {
     return {
@@ -37,36 +37,36 @@ export default {
         perPage: 10,
         currentPage: 1,
         perPageOptions: [5, 10, 25, 50],
-        total: 0
+        total: 0,
       },
-      searchQuery: '',
+      searchQuery: "",
       searchedData: [],
-      fuseSearch: null
-    }
+      fuseSearch: null,
+    };
   },
   methods: {
     sortChange({ prop, order }) {
       if (prop) {
         this.tableData.sort((a, b) => {
-          let aVal = a[prop]
-          let bVal = b[prop]
-          if (order === 'ascending') {
-            return aVal > bVal ? 1 : -1
+          let aVal = a[prop];
+          let bVal = b[prop];
+          if (order === "ascending") {
+            return aVal > bVal ? 1 : -1;
           }
-          return bVal - aVal ? 1 : -1
-        })
+          return bVal - aVal ? 1 : -1;
+        });
       } else {
         this.tableData.sort((a, b) => {
-          return a.id - b.id
-        })
+          return a.id - b.id;
+        });
       }
-    }
+    },
   },
   mounted() {
     // Fuse search initialization.
     this.fuseSearch = new Fuse(this.tableData, {
-      keys: ['name', 'email'],
-      threshold: 0.3
+      keys: ["name", "email"],
+      threshold: 0.3,
     });
   },
   watch: {
@@ -77,10 +77,10 @@ export default {
      */
     searchQuery(value) {
       let result = this.tableData;
-      if (value !== '') {
+      if (value !== "") {
         result = this.fuseSearch.search(this.searchQuery);
       }
       this.searchedData = result;
-    }
-  }
-}
+    },
+  },
+};

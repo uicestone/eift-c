@@ -144,7 +144,8 @@ export default [
     salary: "$198,500",
   },
   {
-    id: 17, name: "Paul Byrd",
+    id: 17,
+    name: "Paul Byrd",
     position: "Chief Financial Officer (CFO)",
     city: "New York",
     age: "64",
@@ -152,7 +153,8 @@ export default [
     salary: "$725,000",
   },
   {
-    id: 18, name: "Gloria Little",
+    id: 18,
+    name: "Gloria Little",
     position: "Systems Administrator",
     city: "New York",
     age: "59",
@@ -160,7 +162,8 @@ export default [
     salary: "$237,500",
   },
   {
-    id: 19, name: "Bradley Greer",
+    id: 19,
+    name: "Bradley Greer",
     position: "Software Engineer",
     city: "London",
     age: "41",
@@ -168,7 +171,8 @@ export default [
     salary: "$132,000",
   },
   {
-    id: 20, name: "Dai Rios",
+    id: 20,
+    name: "Dai Rios",
     position: "Personnel Lead",
     city: "Edinburgh",
     age: "35",
@@ -176,7 +180,8 @@ export default [
     salary: "$217,500",
   },
   {
-    id: 21, name: "Jenette Caldwell",
+    id: 21,
+    name: "Jenette Caldwell",
     position: "Development Lead",
     city: "New York",
     age: "30",
@@ -184,7 +189,8 @@ export default [
     salary: "$345,000",
   },
   {
-    id: 22, name: "Yuri Berry",
+    id: 22,
+    name: "Yuri Berry",
     position: "Chief Marketing Officer (CMO)",
     city: "New York",
     age: "40",
@@ -192,7 +198,8 @@ export default [
     salary: "$675,000",
   },
   {
-    id: 23, name: "Caesar Vance",
+    id: 23,
+    name: "Caesar Vance",
     position: "Pre-Sales Support",
     city: "New York",
     age: "21",
@@ -200,7 +207,8 @@ export default [
     salary: "$106,450",
   },
   {
-    id: 24, name: "Doris Wilder",
+    id: 24,
+    name: "Doris Wilder",
     position: "Sales Assistant",
     city: "Sidney",
     age: "23",
@@ -208,7 +216,8 @@ export default [
     salary: "$85,600",
   },
   {
-    id: 25, name: "Angelica Ramos",
+    id: 25,
+    name: "Angelica Ramos",
     position: "Chief Executive Officer (CEO)",
     city: "London",
     age: "47",
@@ -216,7 +225,8 @@ export default [
     salary: "$1,200,000",
   },
   {
-    id: 26, name: "Gavin Joyce",
+    id: 26,
+    name: "Gavin Joyce",
     position: "Developer",
     city: "Edinburgh",
     age: "42",
@@ -224,7 +234,8 @@ export default [
     salary: "$92,575",
   },
   {
-    id: 27, name: "Jennifer Chang",
+    id: 27,
+    name: "Jennifer Chang",
     position: "Regional Director",
     city: "Singapore",
     age: "28",
@@ -232,7 +243,8 @@ export default [
     salary: "$357,650",
   },
   {
-    id: 28, name: "Brenden Wagner",
+    id: 28,
+    name: "Brenden Wagner",
     position: "Software Engineer",
     city: "San Francisco",
     age: "28",
@@ -240,7 +252,8 @@ export default [
     salary: "$206,850",
   },
   {
-    id: 29, name: "Fiona Green",
+    id: 29,
+    name: "Fiona Green",
     position: "Chief Operating Officer (COO)",
     city: "San Francisco",
     age: "48",
@@ -248,7 +261,8 @@ export default [
     salary: "$850,000",
   },
   {
-    id: 30, name: "Shou Itou",
+    id: 30,
+    name: "Shou Itou",
     position: "Regional Marketing",
     city: "Tokyo",
     age: "20",
@@ -256,7 +270,8 @@ export default [
     salary: "$163,000",
   },
   {
-    id: 31, name: "Michelle House",
+    id: 31,
+    name: "Michelle House",
     position: "Integration Specialist",
     city: "Sidney",
     age: "37",
@@ -264,7 +279,8 @@ export default [
     salary: "$95,400",
   },
   {
-    id: 32, name: "Suki Burks",
+    id: 32,
+    name: "Suki Burks",
     position: "Developer",
     city: "London",
     age: "53",
@@ -272,7 +288,8 @@ export default [
     salary: "$114,500",
   },
   {
-    id: 33, name: "Prescott Bartlett",
+    id: 33,
+    name: "Prescott Bartlett",
     position: "Technical Author",
     city: "London",
     age: "27",
@@ -280,7 +297,8 @@ export default [
     salary: "$145,000",
   },
   {
-    id: 34, name: "Gavin Cortez",
+    id: 34,
+    name: "Gavin Cortez",
     position: "Team Leader",
     city: "San Francisco",
     age: "22",
@@ -288,7 +306,8 @@ export default [
     salary: "$235,500",
   },
   {
-    id: 35, name: "Martena Mccray",
+    id: 35,
+    name: "Martena Mccray",
     position: "Post-Sales support",
     city: "Edinburgh",
     age: "46",
@@ -296,7 +315,8 @@ export default [
     salary: "$324,050",
   },
   {
-    id: 36, name: "Unity Butler",
+    id: 36,
+    name: "Unity Butler",
     position: "Marketing Designer",
     city: "San Francisco",
     age: "47",
@@ -304,7 +324,8 @@ export default [
     salary: "$85,675",
   },
   {
-    id: 37, name: "Howard Hatfield",
+    id: 37,
+    name: "Howard Hatfield",
     position: "Office Manager",
     city: "San Francisco",
     age: "51",
@@ -312,7 +333,8 @@ export default [
     salary: "$164,500",
   },
   {
-    id: 38, name: "Hope Fuentes",
+    id: 38,
+    name: "Hope Fuentes",
     position: "Secretary",
     city: "San Francisco",
     age: "41",
@@ -320,7 +342,8 @@ export default [
     salary: "$109,850",
   },
   {
-    id: 59, name: "Vivian Harrell",
+    id: 59,
+    name: "Vivian Harrell",
     position: "Financial Controller",
     city: "San Francisco",
     age: "62",
@@ -328,7 +351,8 @@ export default [
     salary: "$452,500",
   },
   {
-    id: 39, name: "Timothy Mooney",
+    id: 39,
+    name: "Timothy Mooney",
     position: "Office Manager",
     city: "London",
     age: "37",
@@ -336,7 +360,8 @@ export default [
     salary: "$136,200",
   },
   {
-    id: 40, name: "Jackson Bradshaw",
+    id: 40,
+    name: "Jackson Bradshaw",
     position: "Director",
     city: "New York",
     age: "65",
@@ -344,7 +369,8 @@ export default [
     salary: "$645,750",
   },
   {
-    id: 41, name: "Olivia Liang",
+    id: 41,
+    name: "Olivia Liang",
     position: "Support Engineer",
     city: "Singapore",
     age: "64",
@@ -352,7 +378,8 @@ export default [
     salary: "$234,500",
   },
   {
-    id: 42, name: "Bruno Nash",
+    id: 42,
+    name: "Bruno Nash",
     position: "Software Engineer",
     city: "London",
     age: "38",
@@ -360,7 +387,8 @@ export default [
     salary: "$163,500",
   },
   {
-    id: 43, name: "Sakura Yamamoto",
+    id: 43,
+    name: "Sakura Yamamoto",
     position: "Support Engineer",
     city: "Tokyo",
     age: "37",
@@ -368,7 +396,8 @@ export default [
     salary: "$139,575",
   },
   {
-    id: 44, name: "Thor Walton",
+    id: 44,
+    name: "Thor Walton",
     position: "Developer",
     city: "New York",
     age: "61",
@@ -376,7 +405,8 @@ export default [
     salary: "$98,540",
   },
   {
-    id: 45, name: "Finn Camacho",
+    id: 45,
+    name: "Finn Camacho",
     position: "Support Engineer",
     city: "San Francisco",
     age: "47",
@@ -384,7 +414,8 @@ export default [
     salary: "$87,500",
   },
   {
-    id: 46, name: "Serge Baldwin",
+    id: 46,
+    name: "Serge Baldwin",
     position: "Data Coordinator",
     city: "Singapore",
     age: "64",
@@ -392,7 +423,8 @@ export default [
     salary: "$138,575",
   },
   {
-    id: 47, name: "Zenaida Frank",
+    id: 47,
+    name: "Zenaida Frank",
     position: "Software Engineer",
     city: "New York",
     age: "63",
@@ -400,7 +432,8 @@ export default [
     salary: "$125,250",
   },
   {
-    id: 48, name: "Zorita Serrano",
+    id: 48,
+    name: "Zorita Serrano",
     position: "Software Engineer",
     city: "San Francisco",
     age: "56",
@@ -408,7 +441,8 @@ export default [
     salary: "$115,000",
   },
   {
-    id: 49, name: "Jennifer Acosta",
+    id: 49,
+    name: "Jennifer Acosta",
     position: "Junior Javascript Developer",
     city: "Edinburgh",
     age: "43",
@@ -416,7 +450,8 @@ export default [
     salary: "$75,650",
   },
   {
-    id: 50, name: "Cara Stevens",
+    id: 50,
+    name: "Cara Stevens",
     position: "Sales Assistant",
     city: "New York",
     age: "46",
@@ -424,7 +459,8 @@ export default [
     salary: "$145,600",
   },
   {
-    id: 51, name: "Hermione Butler",
+    id: 51,
+    name: "Hermione Butler",
     position: "Regional Director",
     city: "London",
     age: "47",
@@ -432,7 +468,8 @@ export default [
     salary: "$356,250",
   },
   {
-    id: 52, name: "Lael Greer",
+    id: 52,
+    name: "Lael Greer",
     position: "Systems Administrator",
     city: "London",
     age: "21",
@@ -440,7 +477,8 @@ export default [
     salary: "$103,500",
   },
   {
-    id: 53, name: "Jonas Alexander",
+    id: 53,
+    name: "Jonas Alexander",
     position: "Developer",
     city: "San Francisco",
     age: "30",
@@ -448,7 +486,8 @@ export default [
     salary: "$86,500",
   },
   {
-    id: 54, name: "Shad Decker",
+    id: 54,
+    name: "Shad Decker",
     position: "Regional Director",
     city: "Edinburgh",
     age: "51",
@@ -456,7 +495,8 @@ export default [
     salary: "$183,000",
   },
   {
-    id: 55, name: "Michael Bruce",
+    id: 55,
+    name: "Michael Bruce",
     position: "Javascript Developer",
     city: "Singapore",
     age: "29",
@@ -464,11 +504,12 @@ export default [
     salary: "$183,000",
   },
   {
-    id: 56, name: "Donna Snider",
+    id: 56,
+    name: "Donna Snider",
     position: "Customer Support",
     city: "New York",
     age: "27",
     createdAt: "2011/01/25",
     salary: "$112,000",
   },
-]
+];
