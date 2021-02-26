@@ -2,6 +2,8 @@
   "name": "eift-c",
   "version": "0.1.0",
   "private": true,
+  "description": "Vue Argon Dashboard PRO",
+  "author": "cristijora <joracristi@gmail.com>",
   "scripts": {
     "serve": "vue-cli-service serve --open",
     "build": "vue-cli-service build",
@@ -36,19 +38,26 @@
     "vee-validate": "^3.3.2",
     "vue": "^2.6.11",
     "vue-chartjs": "^3.5.0",
+    "vue-class-component": "^7.2.3",
     "vue-clipboard2": "^0.3.1",
     "vue-flatpickr-component": "^8.1.5",
+    "vue-property-decorator": "^9.1.2",
     "vue-router": "^3.3.2",
     "vue2-transitions": "^0.3.0"
   },
   "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^2.33.0",
+    "@typescript-eslint/parser": "^2.33.0",
     "@vue/cli-plugin-babel": "^4.4.1",
     "@vue/cli-plugin-eslint": "^4.4.1",
+    "@vue/cli-plugin-typescript": "~4.5.0",
     "@vue/cli-service": "^4.4.1",
     "@vue/eslint-config-prettier": "^6.0.0",
+    "@vue/eslint-config-typescript": "^5.0.2",
     "babel-plugin-component": "^1.1.1",
     "node-sass": "^4.14.1",
     "sass-loader": "^8.0.2",
+    "typescript": "~3.9.3",
     "vue-template-compiler": "^2.6.11"
   },
   "postcss": {
@@ -60,7 +69,5 @@
     "> 1%",
     "last 2 versions",
     "not ie <= 10"
-  ],
-  "author": "cristijora <joracristi@gmail.com>",
-  "description": "Vue Argon Dashboard PRO"
+  ]
 }
