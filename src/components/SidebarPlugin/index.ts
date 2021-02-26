@@ -1,3 +1,4 @@
+import { VueConstructor } from "vue/types/umd";
 import Sidebar from "./SideBar.vue";
 import SidebarItem from "./SidebarItem.vue";
 
@@ -7,7 +8,7 @@ const SidebarStore = {
   isMinimized: false,
   breakpoint: 1200,
   hovered: false,
-  displaySidebar(value) {
+  displaySidebar(value: boolean) {
     if (window.innerWidth > this.breakpoint) {
       return;
     }
@@ -62,7 +63,7 @@ const SidebarStore = {
 };
 
 const SidebarPlugin = {
-  install(Vue, options) {
+  install(Vue: VueConstructor, options: any) {
     if (options && options.sidebarLinks) {
       SidebarStore.sidebarLinks = options.sidebarLinks;
     }

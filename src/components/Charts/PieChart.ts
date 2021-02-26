@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Pie, mixins } from "vue-chartjs";
 import globalOptionsMixin from "@/components/Charts/globalOptionsMixin";
 

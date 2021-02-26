@@ -5,7 +5,7 @@ import BaseRadio from "./Inputs/BaseRadio.vue";
 import BaseInput from "./Inputs/BaseInput.vue";
 import TagsInput from "./Inputs/TagsInput.vue";
 import BaseSwitch from "./BaseSwitch.vue";
-import Badge from "./Badge";
+import Badge from "./Badge.vue";
 import BaseProgress from "./BaseProgress.vue";
 import BaseButton from "./BaseButton.vue";
 
@@ -14,8 +14,8 @@ import BaseTable from "./BaseTable.vue";
 
 import Card from "./Cards/Card.vue";
 import StatsCard from "./Cards/StatsCard.vue";
-import BaseNav from "./Navbar/BaseNav";
-import NavbarToggleButton from "./Navbar/NavbarToggleButton";
+import BaseNav from "./Navbar/BaseNav.vue";
+import NavbarToggleButton from "./Navbar/NavbarToggleButton.vue";
 
 import Breadcrumb from "./Breadcrumb/Breadcrumb.vue";
 import BreadcrumbItem from "./Breadcrumb/BreadcrumbItem.vue";

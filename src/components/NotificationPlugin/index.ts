@@ -1,3 +1,4 @@
+// @ts-nocheck
 import Notifications from "./Notifications.vue";
 
 const NotificationStore = {

@@ -1,11 +1,12 @@
-import clickOutside from "@/directives/click-ouside.js";
+import clickOutside from "@/directives/click-ouside.ts";
+import { VueConstructor } from "vue/types/umd";
 
 /**
  * You can register global directives here and use them as a plugin in your main Vue instance
  */
 
 const GlobalDirectives = {
-  install(Vue) {
+  install(Vue: VueConstructor) {
     Vue.directive("click-outside", clickOutside);
   },
 };

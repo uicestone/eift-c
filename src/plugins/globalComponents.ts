@@ -5,23 +5,24 @@ import Modal from "@/components/Modal.vue";
 import StatsCard from "@/components/Cards/StatsCard.vue";
 import BaseButton from "@/components/BaseButton.vue";
 import Badge from "@/components/Badge.vue";
-import RouteBreadcrumb from "@/components/Breadcrumb/RouteBreadcrumb";
+import RouteBreadcrumb from "@/components/Breadcrumb/RouteBreadcrumb.vue";
 import BaseCheckbox from "@/components/Inputs/BaseCheckbox.vue";
 import BaseSwitch from "@/components/BaseSwitch.vue";
-import BaseRadio from "@/components/Inputs/BaseRadio";
-import BaseProgress from "@/components/BaseProgress";
-import BasePagination from "@/components/BasePagination";
-import BaseAlert from "@/components/BaseAlert";
-import BaseNav from "@/components/Navbar/BaseNav";
-import BaseHeader from "@/components/BaseHeader";
+import BaseRadio from "@/components/Inputs/BaseRadio.vue";
+import BaseProgress from "@/components/BaseProgress.vue";
+import BasePagination from "@/components/BasePagination.vue";
+import BaseAlert from "@/components/BaseAlert.vue";
+import BaseNav from "@/components/Navbar/BaseNav.vue";
+import BaseHeader from "@/components/BaseHeader.vue";
 import { ValidationProvider, ValidationObserver } from "vee-validate";
 import { Input, Tooltip, Popover } from "element-ui";
+import { VueConstructor } from "vue/types/umd";
 /**
  * You can register global components here and use them as a plugin in your main Vue instance
  */
 
 const GlobalComponents = {
-  install(Vue) {
+  install(Vue: VueConstructor) {
     Vue.component(Badge.name, Badge);
     Vue.component(BaseAlert.name, BaseAlert);
     Vue.component(BaseButton.name, BaseButton);

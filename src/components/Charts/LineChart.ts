@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Line, mixins } from "vue-chartjs";
 import globalOptionsMixin from "@/components/Charts/globalOptionsMixin";
 export default {

@@ -1,3 +1,4 @@
+// @ts-nocheck
 // Parse global options
 export function parseOptions(parent, options) {
   for (let item in options) {

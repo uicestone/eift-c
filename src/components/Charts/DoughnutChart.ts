@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Doughnut, mixins } from "vue-chartjs";
 import globalOptionsMixin from "@/components/Charts/globalOptionsMixin";
 

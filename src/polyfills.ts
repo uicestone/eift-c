@@ -1,3 +1,4 @@
+// @ts-nocheck
 /* eslint-disable */
 import "es6-promise/auto";
 

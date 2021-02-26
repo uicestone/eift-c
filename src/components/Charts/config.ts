@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { parseOptions } from "@/components/Charts/optionHelpers";
 import Chart from "chart.js";
 

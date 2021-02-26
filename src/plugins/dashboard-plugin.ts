@@ -12,7 +12,9 @@ import GlobalDirectives from "./globalDirectives";
 import SideBar from "@/components/SidebarPlugin";
 
 // element ui language configuration
+// @ts-ignore
 import lang from "element-ui/lib/locale/lang/en";
+// @ts-ignore
 import locale from "element-ui/lib/locale";
 locale.use(lang);
 
@@ -21,16 +23,19 @@ import "@/assets/sass/argon.scss";
 import "@/assets/css/nucleo/css/nucleo.css";
 import { extend } from "vee-validate";
 import * as rules from "vee-validate/dist/rules";
+// @ts-ignore
 import { messages } from "vee-validate/dist/locale/en.json";
+import { VueConstructor } from "vue/types/umd";
 
 Object.keys(rules).forEach((rule) => {
   extend(rule, {
+    // @ts-ignore
     ...rules[rule], // copies rule configuration
     message: messages[rule], // assign message
   });
 });
 export default {
-  install(Vue) {
+  install(Vue: VueConstructor) {
     Vue.use(GlobalComponents);
     Vue.use(GlobalDirectives);
     Vue.use(SideBar);

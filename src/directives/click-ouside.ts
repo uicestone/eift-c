@@ -1,3 +1,4 @@
+// @ts-nocheck
 export default {
   bind: function (el, binding, vnode) {
     el.clickOutsideEvent = function (event) {

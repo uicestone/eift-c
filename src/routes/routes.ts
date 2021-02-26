@@ -206,14 +206,14 @@ let authPages = {
   component: AuthLayout,
   name: "Authentication",
   children: [
-    {
-      path: "/home",
-      name: "Home",
-      component: Home,
-      meta: {
-        noBodyBackground: true,
-      },
-    },
+    // {
+    //   path: "/home",
+    //   name: "Home",
+    //   component: Home,
+    //   meta: {
+    //     noBodyBackground: true,
+    //   },
+    // },
     {
       path: "/login",
       name: "Login",
