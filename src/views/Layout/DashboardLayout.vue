@@ -140,6 +140,38 @@
 
       <template slot="links-after">
         <hr class="my-3" />
+        <h6 class="navbar-heading p-0 text-muted">常用链接</h6>
+
+        <ul class="navbar-nav mb-md-3">
+          <li class="nav-item">
+            <a class="nav-link" href="#" target="_blank">
+              <i class="ni ni-spaceship"></i>
+              <span class="nav-link-text">常用链接1</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" target="_blank">
+              <i class="ni ni-palette"></i>
+              <span class="nav-link-text">常用链接2</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" target="_blank">
+              <i class="ni ni-ui-04"></i>
+              <span class="nav-link-text">常用链接3</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" target="_blank">
+              <i class="ni ni-chart-pie-35"></i>
+              <span class="nav-link-text">常用链接3</span>
+            </a>
+          </li>
+        </ul>
+      </template>
+
+      <template slot="links-after" v-if="isDev">
+        <hr class="my-3" />
         <h6 class="navbar-heading p-0 text-muted">Documentation</h6>
 
         <ul class="navbar-nav mb-md-3">

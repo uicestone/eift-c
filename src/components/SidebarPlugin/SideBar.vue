@@ -5,7 +5,7 @@
     @mouseleave="$sidebar.onMouseLeave()"
   >
     <div class="scrollbar-inner" ref="sidebarScrollArea">
-      <div class="sidenav-header d-flex align-items-center">
+      <div class="sidenav-header d-flex align-items-start">
         <a class="navbar-brand" href="#">
           <img :src="logo" class="navbar-brand-img" alt="Sidebar logo" />
         </a>
