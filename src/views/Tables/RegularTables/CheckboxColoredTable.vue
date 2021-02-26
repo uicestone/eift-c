@@ -16,97 +16,106 @@
       </div>
     </div>
 
-    <el-table class="table-responsive table-flush"
-              header-row-class-name="thead-light"
-              row-key="id"
-              :data="users"
-              :row-class-name="rowClassName"
-              @selection-change="onSelectionChange">
-      <el-table-column type="selection"
-                       align="left"
-                       min-width="120px">
+    <el-table
+      class="table-responsive table-flush"
+      header-row-class-name="thead-light"
+      row-key="id"
+      :data="users"
+      :row-class-name="rowClassName"
+      @selection-change="onSelectionChange"
+    >
+      <el-table-column type="selection" align="left" min-width="120px">
       </el-table-column>
 
-      <el-table-column label="Author"
-                       min-width="220px"
-                       prop="name"
-                       sortable>
-        <template v-slot="{row}">
+      <el-table-column label="Author" min-width="220px" prop="name" sortable>
+        <template v-slot="{ row }">
           <div class="table-user">
-            <b>{{row.name}}</b>
+            <b>{{ row.name }}</b>
           </div>
         </template>
       </el-table-column>
-      <el-table-column label="Created At"
-                       prop="createdAt"
-                       width="170px"
-                       min-width="140px"
-                       sortable>
+      <el-table-column
+        label="Created At"
+        prop="createdAt"
+        width="170px"
+        min-width="140px"
+        sortable
+      >
       </el-table-column>
 
-      <el-table-column label="Product"
-                       min-width="180px"
-                       prop="product"
-                       sortable>
-        <template v-slot="{row}">
-          <a href="#!" class="font-weight-bold">{{row.product}}</a>
+      <el-table-column
+        label="Product"
+        min-width="180px"
+        prop="product"
+        sortable
+      >
+        <template v-slot="{ row }">
+          <a href="#!" class="font-weight-bold">{{ row.product }}</a>
         </template>
       </el-table-column>
 
-      <el-table-column min-width="120px"
-                       label="Active"
-                       prop="active"
-                       sortable
-                       align="center">
-        <template v-slot="{row}">
+      <el-table-column
+        min-width="120px"
+        label="Active"
+        prop="active"
+        sortable
+        align="center"
+      >
+        <template v-slot="{ row }">
           <div class="d-flex justify-content-center">
             <base-switch v-model="row.active"></base-switch>
           </div>
         </template>
       </el-table-column>
     </el-table>
-
   </div>
 </template>
 <script>
-  import users from './../users'
-  import { Table, TableColumn, DropdownMenu, DropdownItem, Dropdown, Tooltip } from 'element-ui'
+import users from "./../users";
+import {
+  Table,
+  TableColumn,
+  DropdownMenu,
+  DropdownItem,
+  Dropdown,
+  Tooltip,
+} from "element-ui";
 
-  export default {
-    name: 'inline-actions-table',
-    components: {
-      [Tooltip.name]: Tooltip,
-      [Table.name]: Table,
-      [TableColumn.name]: TableColumn,
-      [Dropdown.name]: Dropdown,
-      [DropdownItem.name]: DropdownItem,
-      [DropdownMenu.name]: DropdownMenu,
+export default {
+  name: "inline-actions-table",
+  components: {
+    [Tooltip.name]: Tooltip,
+    [Table.name]: Table,
+    [TableColumn.name]: TableColumn,
+    [Dropdown.name]: Dropdown,
+    [DropdownItem.name]: DropdownItem,
+    [DropdownMenu.name]: DropdownMenu,
+  },
+  data() {
+    return {
+      users: JSON.parse(JSON.stringify(users)), // for demo purposes so we don't share same users between different tables
+      currentPage: 1,
+      selectedRows: [],
+    };
+  },
+  methods: {
+    onEdit(row) {
+      alert(`You want to edit ${row.name}`);
     },
-    data() {
-      return {
-        users: JSON.parse(JSON.stringify(users)), // for demo purposes so we don't share same users between different tables
-        currentPage: 1,
-        selectedRows: []
-      };
+    onDelete(row) {
+      alert(`You want to delete ${row.name}`);
     },
-    methods: {
-      onEdit(row) {
-        alert(`You want to edit ${row.name}`)
-      },
-      onDelete(row) {
-        alert(`You want to delete ${row.name}`)
-      },
-      onSelectionChange(selectedRows) {
-        this.selectedRows = selectedRows
-      },
-      rowClassName({ rowIndex }) {
-        if (rowIndex === 0) {
-          return 'table-success'
-        } else if (rowIndex === 2) {
-          return 'table-warning'
-        }
-        return ''
+    onSelectionChange(selectedRows) {
+      this.selectedRows = selectedRows;
+    },
+    rowClassName({ rowIndex }) {
+      if (rowIndex === 0) {
+        return "table-success";
+      } else if (rowIndex === 2) {
+        return "table-warning";
       }
-    }
-  }
+      return "";
+    },
+  },
+};
 </script>

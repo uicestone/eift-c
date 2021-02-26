@@ -6,9 +6,13 @@
           <h6 class="h2 d-inline-block mb-0">Alternative</h6>
           <nav aria-label="breadcrumb" class="d-none d-md-inline-block ml-md-4">
             <ol class="breadcrumb breadcrumb-links">
-              <li class="breadcrumb-item"><router-link to="/"><i class="fas fa-home"></i></router-link></li>
+              <li class="breadcrumb-item">
+                <router-link to="/"><i class="fas fa-home"></i></router-link>
+              </li>
               <li class="breadcrumb-item"><a href="#">Dashboards</a></li>
-              <li class="breadcrumb-item active" aria-current="page">Alternative</li>
+              <li class="breadcrumb-item active" aria-current="page">
+                Alternative
+              </li>
             </ol>
           </nav>
         </div>
@@ -25,15 +29,24 @@
             <div class="card-body">
               <div class="row">
                 <div class="col">
-                  <h5 class="card-title text-uppercase text-muted mb-0 text-white">Tasks completed</h5>
+                  <h5
+                    class="card-title text-uppercase text-muted mb-0 text-white"
+                  >
+                    Tasks completed
+                  </h5>
                   <span class="h2 font-weight-bold mb-0 text-white">8/24</span>
-                  <base-progress class="progress-xs mt-3 mb-0" type="success" :value="30"></base-progress>
+                  <base-progress
+                    class="progress-xs mt-3 mb-0"
+                    type="success"
+                    :value="30"
+                  ></base-progress>
                 </div>
                 <div class="col-auto">
-                  <base-dropdown title-classes="btn btn-sm btn-neutral mr-0"
-                                 menu-on-right
-                                 :has-toggle="false">
-
+                  <base-dropdown
+                    title-classes="btn btn-sm btn-neutral mr-0"
+                    menu-on-right
+                    :has-toggle="false"
+                  >
                     <template slot="title">
                       <i class="fas fa-ellipsis-h"></i>
                     </template>
@@ -45,7 +58,9 @@
                 </div>
               </div>
               <p class="mt-3 mb-0 text-sm">
-                <a href="#!" class="text-nowrap text-white font-weight-600">See details</a>
+                <a href="#!" class="text-nowrap text-white font-weight-600"
+                  >See details</a
+                >
               </p>
             </div>
           </div>
@@ -56,15 +71,26 @@
             <div class="card-body">
               <div class="row">
                 <div class="col">
-                  <h5 class="card-title text-uppercase text-muted mb-0 text-white">Contacts</h5>
-                  <span class="h2 font-weight-bold mb-0 text-white">123/267</span>
-                  <base-progress class="progress-xs mt-3 mb-0" type="success" :value="50"></base-progress>
+                  <h5
+                    class="card-title text-uppercase text-muted mb-0 text-white"
+                  >
+                    Contacts
+                  </h5>
+                  <span class="h2 font-weight-bold mb-0 text-white"
+                    >123/267</span
+                  >
+                  <base-progress
+                    class="progress-xs mt-3 mb-0"
+                    type="success"
+                    :value="50"
+                  ></base-progress>
                 </div>
                 <div class="col-auto">
-                  <base-dropdown title-classes="btn btn-sm btn-neutral mr-0"
-                                 menu-on-right
-                                 :has-toggle="false">
-
+                  <base-dropdown
+                    title-classes="btn btn-sm btn-neutral mr-0"
+                    menu-on-right
+                    :has-toggle="false"
+                  >
                     <template slot="title">
                       <i class="fas fa-ellipsis-h"></i>
                     </template>
@@ -76,7 +102,9 @@
                 </div>
               </div>
               <p class="mt-3 mb-0 text-sm">
-                <a href="#!" class="text-nowrap text-white font-weight-600">See details</a>
+                <a href="#!" class="text-nowrap text-white font-weight-600"
+                  >See details</a
+                >
               </p>
             </div>
           </div>
@@ -87,15 +115,26 @@
             <div class="card-body">
               <div class="row">
                 <div class="col">
-                  <h5 class="card-title text-uppercase text-muted mb-0 text-white">Items sold</h5>
-                  <span class="h2 font-weight-bold mb-0 text-white">200/300</span>
-                  <base-progress class="progress-xs mt-3 mb-0" type="success" :value="80"></base-progress>
+                  <h5
+                    class="card-title text-uppercase text-muted mb-0 text-white"
+                  >
+                    Items sold
+                  </h5>
+                  <span class="h2 font-weight-bold mb-0 text-white"
+                    >200/300</span
+                  >
+                  <base-progress
+                    class="progress-xs mt-3 mb-0"
+                    type="success"
+                    :value="80"
+                  ></base-progress>
                 </div>
                 <div class="col-auto">
-                  <base-dropdown title-classes="btn btn-sm btn-neutral mr-0"
-                                 menu-on-right
-                                 :has-toggle="false">
-
+                  <base-dropdown
+                    title-classes="btn btn-sm btn-neutral mr-0"
+                    menu-on-right
+                    :has-toggle="false"
+                  >
                     <template slot="title">
                       <i class="fas fa-ellipsis-h"></i>
                     </template>
@@ -107,7 +146,9 @@
                 </div>
               </div>
               <p class="mt-3 mb-0 text-sm">
-                <a href="#!" class="text-nowrap text-white font-weight-600">See details</a>
+                <a href="#!" class="text-nowrap text-white font-weight-600"
+                  >See details</a
+                >
               </p>
             </div>
           </div>
@@ -118,15 +159,24 @@
             <div class="card-body">
               <div class="row">
                 <div class="col">
-                  <h5 class="card-title text-uppercase text-muted mb-0 text-white">Notifications</h5>
+                  <h5
+                    class="card-title text-uppercase text-muted mb-0 text-white"
+                  >
+                    Notifications
+                  </h5>
                   <span class="h2 font-weight-bold mb-0 text-white">50/62</span>
-                  <base-progress class="progress-xs mt-3 mb-0" type="success" :value="90"></base-progress>
+                  <base-progress
+                    class="progress-xs mt-3 mb-0"
+                    type="success"
+                    :value="90"
+                  ></base-progress>
                 </div>
                 <div class="col-auto">
-                  <base-dropdown title-classes="btn btn-sm btn-neutral mr-0"
-                                 menu-on-right
-                                 :has-toggle="false">
-
+                  <base-dropdown
+                    title-classes="btn btn-sm btn-neutral mr-0"
+                    menu-on-right
+                    :has-toggle="false"
+                  >
                     <template slot="title">
                       <i class="fas fa-ellipsis-h"></i>
                     </template>
@@ -138,13 +188,14 @@
                 </div>
               </div>
               <p class="mt-3 mb-0 text-sm">
-                <a href="#!" class="text-nowrap text-white font-weight-600">See details</a>
+                <a href="#!" class="text-nowrap text-white font-weight-600"
+                  >See details</a
+                >
               </p>
             </div>
           </div>
         </div>
       </div>
-
     </base-header>
 
     <!--Charts-->
@@ -164,7 +215,6 @@
             :extra-options="bigLineChart.extraOptions"
           >
           </line-chart>
-
         </card>
 
         <card header-classes="bg-transparent">
@@ -231,65 +281,66 @@
       </div>
       <!--End lists-->
     </div>
-
   </div>
 </template>
 <script>
-  // Charts
-  import * as chartConfigs from '@/components/Charts/config';
-  import LineChart from '@/components/Charts/LineChart';
-  import BarChart from '@/components/Charts/BarChart';
+// Charts
+import * as chartConfigs from "@/components/Charts/config";
+import LineChart from "@/components/Charts/LineChart";
+import BarChart from "@/components/Charts/BarChart";
 
-  // Components
-  import BaseHeader from '@/components/BaseHeader';
-  import BaseProgress from '@/components/BaseProgress';
+// Components
+import BaseHeader from "@/components/BaseHeader";
+import BaseProgress from "@/components/BaseProgress";
 
-  // Lists
-  import ProgressTrackList from './ProgressTrackList';
-  import MembersCard from '@/views/Widgets/MembersCard';
-  import TaskList from '@/views/Widgets/TaskList';
+// Lists
+import ProgressTrackList from "./ProgressTrackList";
+import MembersCard from "@/views/Widgets/MembersCard";
+import TaskList from "@/views/Widgets/TaskList";
 
-  // Tables
-  import LightTable from './LightTable';
-  import VectorMapCard from '@/views/Widgets/VectorMapCard'
+// Tables
+import LightTable from "./LightTable";
+import VectorMapCard from "@/views/Widgets/VectorMapCard";
 
-  export default {
-    components: {
-      LineChart,
-      BarChart,
-      BaseHeader,
-      BaseProgress,
-      TaskList,
-      VectorMapCard,
-      LightTable,
-      ProgressTrackList,
-      MembersCard
-    },
-    data() {
-      return {
-        bigLineChart: {
-          chartData: {
-            datasets: [
-              {
-                label: 'Performance',
-                data: [0, 20, 10, 30, 15, 40, 20, 60, 60],
-              }
-            ],
-            labels: ['May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
-          },
-          extraOptions: chartConfigs.blueChartOptions,
+export default {
+  components: {
+    LineChart,
+    BarChart,
+    BaseHeader,
+    BaseProgress,
+    TaskList,
+    VectorMapCard,
+    LightTable,
+    ProgressTrackList,
+    MembersCard,
+  },
+  data() {
+    return {
+      bigLineChart: {
+        chartData: {
+          datasets: [
+            {
+              label: "Performance",
+              data: [0, 20, 10, 30, 15, 40, 20, 60, 60],
+            },
+          ],
+          labels: ["May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
         },
-        redBarChart: {
-          chartData: {
-            labels: ['Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
-            datasets: [{
-              label: 'Sales',
-              data: [25, 20, 30, 22, 17, 29]
-            }]
-          }
-        }
-      };
-    }
-  };
+        extraOptions: chartConfigs.blueChartOptions,
+      },
+      redBarChart: {
+        chartData: {
+          labels: ["Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+          datasets: [
+            {
+              label: "Sales",
+              data: [25, 20, 30, 22, 17, 29],
+            },
+          ],
+        },
+      },
+    };
+  },
+};
 </script>
 <style></style>

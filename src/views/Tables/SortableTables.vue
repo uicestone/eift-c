@@ -17,7 +17,7 @@
     <div class="container-fluid mt--6">
       <div class="row">
         <div class="col">
-          <light-table/>
+          <light-table />
         </div>
       </div>
       <translucent-table></translucent-table>
@@ -26,25 +26,25 @@
   </div>
 </template>
 <script>
-  import RouteBreadCrumb from '@/components/Breadcrumb/RouteBreadcrumb'
-  import projects from './projects'
-  import users from './users'
-  import LightTable from "./RegularTables/LightTable";
-  import TranslucentTable from "./RegularTables/TranslucentTable";
-  import DarkTable from "./RegularTables/DarkTable";
+import RouteBreadCrumb from "@/components/Breadcrumb/RouteBreadcrumb";
+import projects from "./projects";
+import users from "./users";
+import LightTable from "./RegularTables/LightTable";
+import TranslucentTable from "./RegularTables/TranslucentTable";
+import DarkTable from "./RegularTables/DarkTable";
 
-  export default {
-    components: {
-      LightTable,
-      TranslucentTable,
-      DarkTable,
-      RouteBreadCrumb
-    },
-    data() {
-      return {
-        projects,
-        users
-      };
-    }
-  };
+export default {
+  components: {
+    LightTable,
+    TranslucentTable,
+    DarkTable,
+    RouteBreadCrumb,
+  },
+  data() {
+    return {
+      projects,
+      users,
+    };
+  },
+};
 </script>

@@ -17,7 +17,7 @@
     <div class="container-fluid mt--6">
       <div class="row">
         <div class="col">
-          <light-table/>
+          <light-table />
         </div>
       </div>
       <inline-actions-table></inline-actions-table>
@@ -30,39 +30,45 @@
   </div>
 </template>
 <script>
-  import { Dropdown, DropdownItem, DropdownMenu, Table, TableColumn } from 'element-ui';
-  import RouteBreadCrumb from '@/components/Breadcrumb/RouteBreadcrumb'
-  import projects from './projects'
-  import users from './users'
-  import LightTable from "./RegularTables/LightTable";
-  import InlineActionsTable from "./RegularTables/InlineActionsTable";
-  import StripedTable from "./RegularTables/StripedTable";
-  import CheckboxTable from "./RegularTables/CheckboxTable";
-  import CheckboxColoredTable from "./RegularTables/CheckboxColoredTable";
-  import TranslucentTable from "./RegularTables/TranslucentTable";
-  import DarkTable from "./RegularTables/DarkTable";
+import {
+  Dropdown,
+  DropdownItem,
+  DropdownMenu,
+  Table,
+  TableColumn,
+} from "element-ui";
+import RouteBreadCrumb from "@/components/Breadcrumb/RouteBreadcrumb";
+import projects from "./projects";
+import users from "./users";
+import LightTable from "./RegularTables/LightTable";
+import InlineActionsTable from "./RegularTables/InlineActionsTable";
+import StripedTable from "./RegularTables/StripedTable";
+import CheckboxTable from "./RegularTables/CheckboxTable";
+import CheckboxColoredTable from "./RegularTables/CheckboxColoredTable";
+import TranslucentTable from "./RegularTables/TranslucentTable";
+import DarkTable from "./RegularTables/DarkTable";
 
-  export default {
-    components: {
-      LightTable,
-      InlineActionsTable,
-      StripedTable,
-      CheckboxTable,
-      CheckboxColoredTable,
-      TranslucentTable,
-      DarkTable,
-      RouteBreadCrumb,
-      [Dropdown.name]: Dropdown,
-      [DropdownItem.name]: DropdownItem,
-      [DropdownMenu.name]: DropdownMenu,
-      [Table.name]: Table,
-      [TableColumn.name]: TableColumn
-    },
-    data() {
-      return {
-        projects,
-        users
-      };
-    }
-  };
+export default {
+  components: {
+    LightTable,
+    InlineActionsTable,
+    StripedTable,
+    CheckboxTable,
+    CheckboxColoredTable,
+    TranslucentTable,
+    DarkTable,
+    RouteBreadCrumb,
+    [Dropdown.name]: Dropdown,
+    [DropdownItem.name]: DropdownItem,
+    [DropdownMenu.name]: DropdownMenu,
+    [Table.name]: Table,
+    [TableColumn.name]: TableColumn,
+  },
+  data() {
+    return {
+      projects,
+      users,
+    };
+  },
+};
 </script>

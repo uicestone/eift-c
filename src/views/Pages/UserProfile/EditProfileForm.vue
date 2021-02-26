@@ -2,7 +2,7 @@
   <card>
     <div slot="header" class="row align-items-center">
       <div class="col-8">
-        <h3 class="mb-0">Edit profile </h3>
+        <h3 class="mb-0">Edit profile</h3>
       </div>
       <div class="col-4 text-right">
         <a href="#!" class="btn btn-sm btn-primary">Settings</a>
@@ -54,7 +54,7 @@
           </div>
         </div>
       </div>
-      <hr class="my-4">
+      <hr class="my-4" />
 
       <!-- Address -->
       <h6 class="heading-small text-muted mb-4">Contact information</h6>
@@ -101,16 +101,21 @@
         </div>
       </div>
 
-      <hr class="my-4">
+      <hr class="my-4" />
       <!-- Description -->
       <h6 class="heading-small text-muted mb-4">About me</h6>
       <div class="pl-lg-4">
         <div class="form-group">
           <label class="form-control-label">About Me</label>
-          <textarea rows="4" class="form-control" placeholder="A few words about you ...">A beautiful premium dashboard for Bootstrap 4.</textarea>
+          <textarea
+            rows="4"
+            class="form-control"
+            placeholder="A few words about you ..."
+          >
+A beautiful premium dashboard for Bootstrap 4.</textarea
+          >
         </div>
       </div>
-
     </form>
   </card>
 </template>
@@ -119,24 +124,24 @@ export default {
   data() {
     return {
       user: {
-        company: 'Creative Code Inc.',
-        username: 'michael23',
-        email: '',
-        firstName: 'Mike',
-        lastName: 'Andrew',
-        address: 'Bld Mihail Kogalniceanu, nr. 8 Bl 1, Sc 1, Ap 09',
-        city: 'New York',
-        country: 'USA',
-        postalCode: '',
-        aboutMe: `Lamborghini Mercy, Your chick she so thirsty, I'm in that two seat Lambo.`
-      }
+        company: "Creative Code Inc.",
+        username: "michael23",
+        email: "",
+        firstName: "Mike",
+        lastName: "Andrew",
+        address: "Bld Mihail Kogalniceanu, nr. 8 Bl 1, Sc 1, Ap 09",
+        city: "New York",
+        country: "USA",
+        postalCode: "",
+        aboutMe: `Lamborghini Mercy, Your chick she so thirsty, I'm in that two seat Lambo.`,
+      },
     };
   },
   methods: {
     updateProfile() {
-      alert('Your data: ' + JSON.stringify(this.user));
-    }
-  }
+      alert("Your data: " + JSON.stringify(this.user));
+    },
+  },
 };
 </script>
 <style></style>

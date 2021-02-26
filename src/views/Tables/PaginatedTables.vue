@@ -16,15 +16,21 @@
     </base-header>
     <div class="container-fluid mt--6">
       <div>
-        <card class="no-border-card" body-classes="px-0 pb-1" footer-classes="pb-2">
+        <card
+          class="no-border-card"
+          body-classes="px-0 pb-1"
+          footer-classes="pb-2"
+        >
           <template slot="header">
             <h3 class="mb-0">Paginated tables</h3>
             <p class="text-sm mb-0">
-              This is a client side example of paginated tables using element-ui tables.
+              This is a client side example of paginated tables using element-ui
+              tables.
             </p>
           </template>
           <div>
-            <div class="col-12 d-flex justify-content-center justify-content-sm-between flex-wrap"
+            <div
+              class="col-12 d-flex justify-content-center justify-content-sm-between flex-wrap"
             >
               <el-select
                 class="select-primary pagination-select"
@@ -42,17 +48,21 @@
               </el-select>
 
               <div>
-                <base-input v-model="searchQuery"
-                            prepend-icon="fas fa-search"
-                            placeholder="Search...">
+                <base-input
+                  v-model="searchQuery"
+                  prepend-icon="fas fa-search"
+                  placeholder="Search..."
+                >
                 </base-input>
               </div>
             </div>
-            <el-table :data="queriedData"
-                      row-key="id"
-                      header-row-class-name="thead-light"
-                      @sort-change="sortChange"
-                      @selection-change="selectionChange">
+            <el-table
+              :data="queriedData"
+              row-key="id"
+              header-row-class-name="thead-light"
+              @sort-change="sortChange"
+              @selection-change="selectionChange"
+            >
               <el-table-column
                 v-for="column in tableColumns"
                 :key="column.label"
@@ -60,7 +70,7 @@
               >
               </el-table-column>
               <el-table-column min-width="180px" align="right" label="Actions">
-                <div slot-scope="{$index, row}" class="d-flex">
+                <div slot-scope="{ $index, row }" class="d-flex">
                   <base-button
                     @click.native="handleLike($index, row)"
                     class="like btn-link"
@@ -101,10 +111,9 @@
                 Showing {{ from + 1 }} to {{ to }} of {{ total }} entries
 
                 <span v-if="selectedRows.length">
-                  &nbsp; &nbsp; {{selectedRows.length}} rows selected
+                  &nbsp; &nbsp; {{ selectedRows.length }} rows selected
                 </span>
               </p>
-
             </div>
             <base-pagination
               class="pagination-no-border"
@@ -116,15 +125,16 @@
           </div>
         </card>
       </div>
-    </div></div
-></template>
+    </div>
+  </div>
+</template>
 <script>
-import { Table, TableColumn, Select, Option } from 'element-ui';
-import RouteBreadCrumb from '@/components/Breadcrumb/RouteBreadcrumb'
-import { BasePagination } from '@/components';
-import clientPaginationMixin from './PaginatedTables/clientPaginationMixin'
-import swal from 'sweetalert2';
-import users from './users2';
+import { Table, TableColumn, Select, Option } from "element-ui";
+import RouteBreadCrumb from "@/components/Breadcrumb/RouteBreadcrumb";
+import { BasePagination } from "@/components";
+import clientPaginationMixin from "./PaginatedTables/clientPaginationMixin";
+import swal from "sweetalert2";
+import users from "./users2";
 
 export default {
   mixins: [clientPaginationMixin],
@@ -134,54 +144,54 @@ export default {
     [Select.name]: Select,
     [Option.name]: Option,
     [Table.name]: Table,
-    [TableColumn.name]: TableColumn
+    [TableColumn.name]: TableColumn,
   },
   data() {
     return {
-      propsToSearch: ['name', 'email', 'age'],
+      propsToSearch: ["name", "email", "age"],
       tableColumns: [
         {
-          type: 'selection'
+          type: "selection",
         },
         {
-          prop: 'name',
-          label: 'Name',
+          prop: "name",
+          label: "Name",
           minWidth: 160,
-          sortable: true
+          sortable: true,
         },
         {
-          prop: 'position',
-          label: 'Position',
+          prop: "position",
+          label: "Position",
           minWidth: 220,
-          sortable: true
+          sortable: true,
         },
         {
-          prop: 'city',
-          label: 'Office',
+          prop: "city",
+          label: "Office",
           minWidth: 135,
-          sortable: true
+          sortable: true,
         },
         {
-          prop: 'age',
-          label: 'Age',
+          prop: "age",
+          label: "Age",
           minWidth: 100,
-          sortable: true
+          sortable: true,
         },
         {
-          prop: 'createdAt',
-          label: 'Start Date',
+          prop: "createdAt",
+          label: "Start Date",
           minWidth: 150,
-          sortable: true
+          sortable: true,
         },
         {
-          prop: 'salary',
-          label: 'Salary',
+          prop: "salary",
+          label: "Salary",
           minWidth: 120,
-          sortable: true
-        }
+          sortable: true,
+        },
       ],
       tableData: users,
-      selectedRows: []
+      selectedRows: [],
     };
   },
   methods: {
@@ -189,56 +199,56 @@ export default {
       swal({
         title: `You liked ${row.name}`,
         buttonsStyling: false,
-        type: 'success',
-        confirmButtonClass: 'btn btn-success btn-fill'
+        type: "success",
+        confirmButtonClass: "btn btn-success btn-fill",
       });
     },
     handleEdit(index, row) {
       swal({
         title: `You want to edit ${row.name}`,
         buttonsStyling: false,
-        confirmButtonClass: 'btn btn-info btn-fill'
+        confirmButtonClass: "btn btn-info btn-fill",
       });
     },
     handleDelete(index, row) {
       swal({
-        title: 'Are you sure?',
+        title: "Are you sure?",
         text: `You won't be able to revert this!`,
-        type: 'warning',
+        type: "warning",
         showCancelButton: true,
-        confirmButtonClass: 'btn btn-success btn-fill',
-        cancelButtonClass: 'btn btn-danger btn-fill',
-        confirmButtonText: 'Yes, delete it!',
-        buttonsStyling: false
-      }).then(result => {
+        confirmButtonClass: "btn btn-success btn-fill",
+        cancelButtonClass: "btn btn-danger btn-fill",
+        confirmButtonText: "Yes, delete it!",
+        buttonsStyling: false,
+      }).then((result) => {
         if (result.value) {
           this.deleteRow(row);
           swal({
-            title: 'Deleted!',
+            title: "Deleted!",
             text: `You deleted ${row.name}`,
-            type: 'success',
-            confirmButtonClass: 'btn btn-success btn-fill',
-            buttonsStyling: false
+            type: "success",
+            confirmButtonClass: "btn btn-success btn-fill",
+            buttonsStyling: false,
           });
         }
       });
     },
     deleteRow(row) {
       let indexToDelete = this.tableData.findIndex(
-        tableRow => tableRow.id === row.id
+        (tableRow) => tableRow.id === row.id
       );
       if (indexToDelete >= 0) {
         this.tableData.splice(indexToDelete, 1);
       }
     },
     selectionChange(selectedRows) {
-      this.selectedRows = selectedRows
-    }
-  }
+      this.selectedRows = selectedRows;
+    },
+  },
 };
 </script>
 <style>
-  .no-border-card .card-footer{
-    border-top: 0;
-  }
+.no-border-card .card-footer {
+  border-top: 0;
+}
 </style>

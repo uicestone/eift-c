@@ -3,9 +3,9 @@
     <base-header class="pb-6">
       <div class="row align-items-center py-4">
         <div class="col-lg-6 col-7">
-          <h6 class="h2 text-white d-inline-block mb-0">{{$route.name}}</h6>
+          <h6 class="h2 text-white d-inline-block mb-0">{{ $route.name }}</h6>
           <nav aria-label="breadcrumb" class="d-none d-md-inline-block ml-md-4">
-            <route-breadcrumb/>
+            <route-breadcrumb />
           </nav>
         </div>
         <div class="col-lg-6 col-5 text-right">
@@ -20,24 +20,25 @@
         <div class="col">
           <div class="card">
             <div class="card-body pt-0">
-              <async-world-map class="map map-big"
-                               :map-data="mapData"
-                               :points="points">
+              <async-world-map
+                class="map map-big"
+                :map-data="mapData"
+                :points="points"
+              >
               </async-world-map>
             </div>
           </div>
         </div>
       </div>
     </div>
-
   </div>
 </template>
 <script>
-import AsyncWorldMap from '@/components/WorldMap/AsyncWorldMap.vue';
+import AsyncWorldMap from "@/components/WorldMap/AsyncWorldMap.vue";
 
 export default {
   components: {
-    AsyncWorldMap
+    AsyncWorldMap,
   },
   data() {
     return {
@@ -52,36 +53,36 @@ export default {
         IND: 200,
         ROU: 600,
         RUS: 757,
-        USA: 1800
+        USA: 1800,
       },
       points: [
         {
-          name: 'Brazil',
-          centered: 'BRA',
+          name: "Brazil",
+          centered: "BRA",
         },
         {
-          name: 'France',
-          centered: 'FRA',
+          name: "France",
+          centered: "FRA",
         },
         {
-          name: 'Italy',
-          centered: 'ITA',
+          name: "Italy",
+          centered: "ITA",
         },
         {
-          name: 'Oman',
-          centered: 'OMN',
+          name: "Oman",
+          centered: "OMN",
         },
         {
-          name: 'Indonesia',
-          centered: 'IDN',
+          name: "Indonesia",
+          centered: "IDN",
         },
         {
-          name: 'Romania',
-          centered: 'ROU',
-        }
-      ]
+          name: "Romania",
+          centered: "ROU",
+        },
+      ],
     };
-  }
+  },
 };
 </script>
 <style>
