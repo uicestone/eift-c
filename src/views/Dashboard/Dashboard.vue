@@ -62,11 +62,11 @@
     <div class="container-fluid mt--6">
       <div class="row">
         <div class="col-xl-8">
-          <card type="default" header-classes="bg-transparent">
+          <card header-classes="bg-transparent">
             <div slot="header" class="row align-items-center">
               <div class="col">
-                <h6 class="text-light text-uppercase ls-1 mb-1">Overview</h6>
-                <h5 class="h3 text-white mb-0">Sales value</h5>
+                <h6 class="text-light text-uppercase ls-1 mb-1">数据总览</h6>
+                <h5 class="h3 mb-0">数据</h5>
               </div>
               <div class="col">
                 <ul class="nav nav-pills justify-content-end">
@@ -77,8 +77,8 @@
                       :class="{ active: bigLineChart.activeIndex === 0 }"
                       @click.prevent="initBigChart(0)"
                     >
-                      <span class="d-none d-md-block">Month</span>
-                      <span class="d-md-none">M</span>
+                      <span class="d-none d-md-block">月</span>
+                      <span class="d-md-none">月</span>
                     </a>
                   </li>
                   <li class="nav-item">
@@ -88,8 +88,8 @@
                       :class="{ active: bigLineChart.activeIndex === 1 }"
                       @click.prevent="initBigChart(1)"
                     >
-                      <span class="d-none d-md-block">Week</span>
-                      <span class="d-md-none">W</span>
+                      <span class="d-none d-md-block">周</span>
+                      <span class="d-md-none">周</span>
                     </a>
                   </li>
                 </ul>
@@ -108,8 +108,8 @@
           <card header-classes="bg-transparent">
             <div slot="header" class="row align-items-center">
               <div class="col">
-                <h6 class="text-uppercase text-muted ls-1 mb-1">Performance</h6>
-                <h5 class="h3 mb-0">Total orders</h5>
+                <h6 class="text-uppercase text-muted ls-1 mb-1">月度数据</h6>
+                <h5 class="h3 mb-0">数据</h5>
               </div>
             </div>
 
@@ -273,13 +273,13 @@ export default {
               data: [0, 20, 10, 30, 15, 40, 20, 60, 60],
             },
           ],
-          labels: ["May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+          labels: ["5月", "6月", "7月", "8月", "9月", "10月", "11月", "12月"],
         },
         extraOptions: chartConfigs.blueChartOptions,
       },
       redBarChart: {
         chartData: {
-          labels: ["Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+          labels: ["7月", "8月", "9月", "10月", "11月", "12月"],
           datasets: [
             {
               label: "Sales",
@@ -300,7 +300,7 @@ export default {
             data: this.bigLineChart.allData[index],
           },
         ],
-        labels: ["May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+        labels: ["5月", "6月", "7月", "8月", "9月", "10月", "11月", "12月"],
       };
       this.bigLineChart.chartData = chartData;
       this.bigLineChart.activeIndex = index;
