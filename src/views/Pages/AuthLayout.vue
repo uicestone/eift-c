@@ -23,11 +23,7 @@
               </router-link>
             </div>
             <div class="col-6 collapse-close">
-              <button
-                type="button"
-                class="navbar-toggler"
-                @click="showMenu = false"
-              >
+              <button type="button" class="navbar-toggler" @click="showMenu = false">
                 <span></span>
                 <span></span>
               </button>
@@ -36,7 +32,7 @@
         </div>
 
         <ul class="navbar-nav mr-auto">
-          <li class="nav-item">
+          <!-- <li class="nav-item">
             <router-link to="/dashboard" class="nav-link">
               <span class="nav-link-inner--text">Dashboard</span>
             </router-link>
@@ -60,11 +56,11 @@
             <router-link to="/lock" class="nav-link">
               <span class="nav-link-inner--text">Lock</span>
             </router-link>
-          </li>
+          </li>-->
         </ul>
         <hr class="d-lg-none" />
         <ul class="navbar-nav align-items-lg-center ml-lg-auto">
-          <li class="nav-item">
+          <!-- <li class="nav-item">
             <a
               class="nav-link nav-link-icon"
               href="https://www.facebook.com/creativetim"
@@ -123,7 +119,7 @@
               </span>
               <span class="nav-link-inner--text">Purchase now</span>
             </a>
-          </li>
+          </li>-->
         </ul>
       </template>
     </base-nav>
@@ -141,56 +137,34 @@
             <div class="copyright text-center text-xl-left text-muted">
               © {{ year }}
               <a
-                href="https://www.creative-tim.com"
+                href="https://codeispoetry.tech"
                 class="font-weight-bold ml-1"
                 target="_blank"
-                >Creative Tim</a
-              >
-              &
-              <a
-                href="https://www.binarcode.com"
-                class="font-weight-bold ml-1"
-                target="_blank"
-                >Binar Code</a
-              >
+              >诗序软件</a>
             </div>
           </div>
           <div class="col-xl-6">
-            <ul
-              class="nav nav-footer justify-content-center justify-content-xl-end"
-            >
-              <li class="nav-item">
-                <a
-                  href="https://www.creative-tim.com"
-                  class="nav-link"
-                  target="_blank"
-                  >Creative Tim</a
-                >
+            <ul class="nav nav-footer justify-content-center justify-content-xl-end">
+              <!-- <li class="nav-item">
+                <a href="https://www.creative-tim.com" class="nav-link" target="_blank">Creative Tim</a>
               </li>
               <li class="nav-item">
                 <a
                   href="https://www.creative-tim.com/presentation"
                   class="nav-link"
                   target="_blank"
-                  >About Us</a
-                >
+                >About Us</a>
               </li>
               <li class="nav-item">
-                <a
-                  href="http://blog.creative-tim.com"
-                  class="nav-link"
-                  target="_blank"
-                  >Blog</a
-                >
+                <a href="http://blog.creative-tim.com" class="nav-link" target="_blank">Blog</a>
               </li>
               <li class="nav-item">
                 <a
                   href="https://www.creative-tim.com/license"
                   class="nav-link"
                   target="_blank"
-                  >License</a
-                >
-              </li>
+                >License</a>
+              </li>-->
             </ul>
           </div>
         </div>

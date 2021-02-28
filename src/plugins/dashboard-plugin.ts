@@ -24,7 +24,7 @@ import "@/assets/css/nucleo/css/nucleo.css";
 import { extend } from "vee-validate";
 import * as rules from "vee-validate/dist/rules";
 // @ts-ignore
-import { messages } from "vee-validate/dist/locale/en.json";
+import { messages } from "vee-validate/dist/locale/zh_CN.json";
 import { VueConstructor } from "vue/types/umd";
 
 Object.keys(rules).forEach((rule) => {
