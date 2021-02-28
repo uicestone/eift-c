@@ -176,7 +176,7 @@
             <span>Support</span>
           </a>-->
           <div class="dropdown-divider"></div>
-          <a href="#!" class="dropdown-item">
+          <a @click="logout" class="dropdown-item">
             <i class="ni ni-user-run"></i>
             <span>登出</span>
           </a>
@@ -229,6 +229,10 @@ export default {
     },
     hideSidebar() {
       this.$sidebar.displaySidebar(false);
+    },
+    logout() {
+      window.localStorage.removeItem("token");
+      this.$router.push("/login");
     },
   },
 };
