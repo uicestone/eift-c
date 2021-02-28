@@ -17,7 +17,10 @@ http.interceptors.request.use((request: AxiosRequestConfig) => {
     !["auth/login", "config"].includes(request.url || "") &&
     !window.localStorage.getItem("token")
   ) {
-    window.history.pushState(null, "Sign In", "/login");
+    console.log(
+      "trying to request auth required api but no token, redirect to login"
+    );
+    window.history.pushState(null, "登录", "/login");
     return Promise.reject(new Error("无效登录，请重新登录"));
   }
   return request;
@@ -31,6 +34,7 @@ http.interceptors.response.use(
     if (!response) return Promise.reject(err);
     // redirect to login page on any 401 response
     if (response.status === 401 && window.location.pathname !== "/login") {
+      console.log("got 401 response, redirect login.");
       window.history.pushState(null, "登录", "/login");
       window.localStorage.removeItem("token");
     }

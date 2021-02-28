@@ -16,20 +16,6 @@ async function getHttpData(path: string) {
 }
 
 const loadConfig = async (loaded: Config | null = null) => {
-  if (
-    !loaded &&
-    window.location.pathname !== "/login" &&
-    !window.localStorage.getItem("token")
-  ) {
-    window.history.pushState(null, "Sign In", "/login");
-    return;
-  } else if (
-    !loaded &&
-    window.location.pathname === "/login" &&
-    window.localStorage.getItem("token")
-  ) {
-    window.history.pushState(null, "Home", "/");
-  }
   const configLoaded: Partial<Config> = loaded || {};
   const [config, user] = await Promise.all([
     Object.keys(configLoaded).length ? configLoaded : getHttpData("config"),

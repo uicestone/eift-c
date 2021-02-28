@@ -25,6 +25,19 @@ export default class App extends Vue {
     await this.loadConfig();
 
     this.$router.beforeResolve(async (to, from, next) => {
+      // console.log("beforeResolve", to, from);
+      if (to.path !== "/login" && !window.localStorage.getItem("token")) {
+        console.log(
+          "Router beforeResolve: not to login page but no token, redirect to login."
+        );
+        return this.$router.push("/login");
+      } else if (to.path === "/login" && window.localStorage.getItem("token")) {
+        console.log(
+          "Router beforeResolve: to login page but has token, redirect to home."
+        );
+        return this.$router.push("/");
+      }
+
       if (to.path === "/login") next();
       else {
         const config = await loadConfig(this.$config);
