@@ -6,6 +6,18 @@ export interface Address {
   detail: string;
 }
 
+export interface CapitalTeam {
+  name: string;
+  contacts: string;
+}
+
+export interface ContactDetail {
+  type: "fixed" | "mobile" | "email";
+  scene: string;
+  value: string;
+  entity?: string;
+}
+
 export interface Config {
   user?: User;
 }
@@ -28,44 +40,45 @@ export interface ConfigItem extends Model, Record<string, any> {
   value: any;
 }
 
-export interface Contract extends Model {
-  application: string;
-  type: "mca" | "lsa" | null;
-  entityOtherIdentity?: string;
-  verifiedFields: string[];
-  contractPath?: string;
-  envelopeId?: string;
-  sent?: boolean;
+export interface Business extends Entity {}
+
+export interface Capital extends Entity {
+  features: string[];
+  majorLp: string;
+  teams: CapitalTeam[];
+  recentInvestments: string[];
 }
 
-export interface ConsumerCreditProfile extends Model {
-  user?: string;
-  addressInformation: any[];
-  consumerIdentity: any;
-  employmentInformation: any[];
-  inquiry: any[];
-  summaries: any[];
-  riskModel: any[];
-  ssn: any[];
-  tradeline: any[];
+export interface Contact {
+  name: string;
+  contactDetails: Contact[];
+  remarks?: string;
 }
 
-export interface Entity extends Model {
-  officialName: string;
-  dba?: string;
-  fein?: string;
-  entityType?: string;
-  tags: string[];
-  coopSince?: Date;
-  incorporateState?: string;
-}
+export interface Entity extends Model {}
 
 export interface File extends Model {
   uri: string;
   thumbnailUrl?: string;
   name: string;
   url: string;
-  type: string;
+}
+
+export interface Investment {
+  status: "pending" | "rejected" | "following" | "funded";
+  capital: Capital;
+  business: Business;
+  ndaStatus: "pending" | "sent" | "signed";
+  ndaSignedOn: string;
+  materialSentOn: string;
+  meetings: Meeting[];
+}
+
+export interface Meeting {
+  investment: Ref<Investment>;
+  date: string;
+  files: File[];
+  remarks?: string;
 }
 
 export interface Post extends Model {
