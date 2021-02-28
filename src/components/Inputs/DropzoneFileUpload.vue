@@ -5,15 +5,8 @@
   >
     <div class="fallback">
       <div class="custom-file">
-        <input
-          type="file"
-          class="custom-file-input"
-          id="projectCoverUploads"
-          :multiple="multiple"
-        />
-        <label class="custom-file-label" for="projectCoverUploads"
-          >Choose file</label
-        >
+        <input type="file" class="custom-file-input" id="projectCoverUploads" :multiple="multiple" />
+        <label class="custom-file-label" for="projectCoverUploads">选择文件</label>
       </div>
     </div>
     <div

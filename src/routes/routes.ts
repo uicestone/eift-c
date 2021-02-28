@@ -3,6 +3,12 @@ import AuthLayout from "@/views/Pages/AuthLayout.vue";
 // GeneralViews
 import NotFound from "@/views/GeneralViews/NotFoundPage.vue";
 
+const CapitalList = () =>
+  import(/* webpackChunkName: "capital" */ "@/views/Capital/CapitalList.vue");
+// Charts
+const CapitalDetail = () =>
+  import(/* webpackChunkName: "capital" */ "@/views/Capital/CapitalDetail.vue");
+
 // Calendar
 const Calendar = () =>
   import(/* webpackChunkName: "extra" */ "@/views/Calendar/Calendar.vue");
@@ -201,6 +207,25 @@ let pagesMenu = {
   ],
 };
 
+let capitalMenu = {
+  path: "/capital",
+  component: DashboardLayout,
+  name: "投资机构",
+  redirect: "/capital/index",
+  children: [
+    {
+      path: "index",
+      name: "投资机构列表",
+      component: CapitalList,
+    },
+    {
+      path: ":id",
+      name: "投资机构详情",
+      component: CapitalDetail,
+    },
+  ],
+};
+
 let authPages = {
   path: "/",
   component: AuthLayout,
@@ -249,6 +274,7 @@ const routes = [
   tablesMenu,
   mapsMenu,
   pagesMenu,
+  capitalMenu,
   {
     path: "/",
     component: DashboardLayout,
