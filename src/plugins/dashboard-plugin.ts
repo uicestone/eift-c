@@ -8,6 +8,8 @@ import { configure } from "vee-validate";
 import GlobalComponents from "./globalComponents";
 // A plugin file where you could register global directives
 import GlobalDirectives from "./globalDirectives";
+
+import GlobalVars from "./globalVars";
 // Sidebar on the right. Used as a local plugin in DashboardLayout.vue
 import SideBar from "@/components/SidebarPlugin";
 
@@ -38,6 +40,7 @@ export default {
   install(Vue: VueConstructor) {
     Vue.use(GlobalComponents);
     Vue.use(GlobalDirectives);
+    Vue.use(GlobalVars);
     Vue.use(SideBar);
     Vue.use(Notifications);
     configure({

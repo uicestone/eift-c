@@ -28,4 +28,7 @@ new Vue({
   el: "#app",
   render: (h) => h(App),
   router,
+  data: {
+    config: {},
+  },
 });
