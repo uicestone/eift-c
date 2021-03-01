@@ -22,4 +22,11 @@ module.exports = {
     // Enable CSS source maps.
     sourceMap: process.env.NODE_ENV !== "production",
   },
+  chainWebpack: (config) => {
+    config.plugin("define").tap((args) => {
+      let v = JSON.stringify(require("./package.json").version);
+      args[0]["process.env"]["VERSION"] = v;
+      return args;
+    });
+  },
 };
