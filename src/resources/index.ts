@@ -1,6 +1,6 @@
 import Axios, { AxiosRequestConfig } from "axios";
 import Resource from "./Resource";
-import { ConfigItem, User, File, Post } from "./interfaces";
+import { ConfigItem, User, File, Post, Capital } from "./interfaces";
 
 export const http = Axios.create({
   baseURL: process.env.VUE_APP_API_BASE,
@@ -41,6 +41,8 @@ http.interceptors.response.use(
     return Promise.reject(err);
   }
 );
+
+export const CapitalResource = new Resource<Capital>(http, "capital/{id}");
 
 export const ConfigItemResource = new Resource<ConfigItem>(
   http,
