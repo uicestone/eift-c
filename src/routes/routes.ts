@@ -217,6 +217,7 @@ let capitalMenu = {
       path: "index",
       name: "投资机构列表",
       component: CapitalList,
+      meta: { keepalive: true },
     },
     {
       path: ":id",

@@ -223,8 +223,12 @@
 
       <div @click="$sidebar.displaySidebar(false)">
         <fade-transition :duration="200" origin="center top" mode="out-in">
-          <!-- your content here -->
-          <router-view></router-view>
+          <keep-alive>
+            <router-view :key="$route.fullPath" v-if="$route.meta.keepAlive && !$isDev" />
+          </keep-alive>
+        </fade-transition>
+        <fade-transition :duration="200" origin="center top" mode="out-in">
+          <router-view :key="$route.fullPath" v-if="!$route.meta.keepAlive || $isDev" />
         </fade-transition>
       </div>
       <content-footer v-if="!$route.meta.hideFooter"></content-footer>
