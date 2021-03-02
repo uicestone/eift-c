@@ -11,12 +11,15 @@
       .row
         .col
           .card
-            //- .border-0.card-header
-              h3.mb-0 投资机构
             el-table.table-responsive.table-flush(header-row-class-name='thead-light' :data='items' @row-click="showDetail")
               el-table-column(label='名称' prop='name' sortable)
               el-table-column(label='主要LP' prop='majorLp' sortable)
+              el-table-column(label='团队' prop='teams' sortable)
+                template(#default="{row:{teams}}")
+                  span {{teams.length}}
               el-table-column(label='投资特点' prop='features' sortable)
+                template(#default="{row:{features}}")
+                  base-button.btn-sm(v-for="feature in features" :key="feature" @click.stop) {{feature}}
             .card-footer.py-4.d-flex.justify-content-end
               base-pagination(v-model='currentPage' :total='10')
 
