@@ -9,7 +9,7 @@
         <a class="navbar-brand" href="#">
           <img :src="logo" class="navbar-brand-img" alt="Sidebar logo" />
         </a>
-        <div class="ml-auto">
+        <div class="ml-auto" style="position: absolute; right: 0;">
           <!-- Sidenav toggler -->
           <div
             class="sidenav-toggler d-none d-xl-block"
