@@ -110,4 +110,14 @@ html {
   position: sticky;
   top: 0;
 }
+.btn-fixed-fab {
+  width: 50px;
+  height: 50px;
+  font-size: 20px;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 1000;
+  outline: none;
+}
 </style>

@@ -64,7 +64,9 @@
                   h3.mb-0(slot='header') 相关文件
                   drop-file-upload(v-model='item.files' multiple)
             .col-lg-12.row.justify-content-end
-              base-button(type="primary" native-type="submit") 保存
+              base-button.btn-icon-only.btn-fixed-fab(round type="primary" native-type="submit")
+                span.btn-inner--icon
+                  i.fas.fa-save
 </template>
 
 <script lang="ts">
@@ -111,6 +113,7 @@ export default class CapitalDetail extends Vue {
     this.item.teams = this.item.teams.filter((t) => t.name);
     this.item = await CapitalResource.save(this.item);
     this.$notify({ title: "", message: "投资机构保存成功", type: "success" });
+    this.$router.replace("/capital/" + this.item.id);
   }
 
   async created() {
