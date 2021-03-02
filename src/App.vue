@@ -106,4 +106,8 @@ html {
 .uppercase {
   text-transform: uppercase;
 }
+.sticky {
+  position: sticky;
+  top: 0;
+}
 </style>
