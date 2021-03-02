@@ -20,8 +20,8 @@
               el-table-column(label='投资特点' prop='features' sortable)
                 template(#default="{row:{features}}")
                   base-button.btn-sm(v-for="feature in features" :key="feature" @click.stop) {{feature}}
-            .card-footer.py-4.d-flex.justify-content-end
-              base-pagination(v-model='currentPage' :total='10')
+            .card-footer.pt-2.pb-0.d-flex.justify-content-end
+              base-pagination(v-model='currentPage' :perPage="perPage" :total='total')
 
 </template>
 <script lang="ts">

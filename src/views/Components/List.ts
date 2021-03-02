@@ -10,7 +10,7 @@ export default class List<M extends Model> extends Vue {
   autoCompletes: { key: string; minLength: number }[] = [];
   currentSort = "createdAt";
   currentSortOrder = "desc";
-  perPage = Math.max(Math.floor((window.innerHeight - 410) / 48), 5);
+  perPage = Math.max(Math.floor((window.innerHeight - 300) / 54), 5);
   currentPage = 1;
   total = 0;
   searchQuery: Record<string, any> = {};
