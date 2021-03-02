@@ -10,6 +10,9 @@ import GlobalComponents from "./globalComponents";
 import GlobalDirectives from "./globalDirectives";
 
 import GlobalVars from "./globalVars";
+
+import GlobalFilter from "./globalFilters";
+
 // Sidebar on the right. Used as a local plugin in DashboardLayout.vue
 import SideBar from "@/components/SidebarPlugin";
 
@@ -41,6 +44,7 @@ export default {
     Vue.use(GlobalComponents);
     Vue.use(GlobalDirectives);
     Vue.use(GlobalVars);
+    Vue.use(GlobalFilter);
     Vue.use(SideBar);
     Vue.use(Notifications);
     configure({
