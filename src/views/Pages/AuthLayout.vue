@@ -1,5 +1,6 @@
 <template>
   <div>
+    <notifications></notifications>
     <base-nav
       v-model="showMenu"
       type="light"
