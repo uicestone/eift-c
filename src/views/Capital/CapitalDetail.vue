@@ -46,7 +46,7 @@
               .card-wrapper
                 card
                   h3.mb-0(slot='header') 投资特点
-                  tags-input(v-model='item.features' placeholder='新增特点')
+                  tags-input(v-model='item.features' placeholder='新增特点' @keydown.native.enter.prevent)
                 card
                   template(#header)
                     .row
@@ -113,7 +113,12 @@ export default class CapitalDetail extends Vue {
     this.item.teams = this.item.teams.filter((t) => t.name);
     this.item = await CapitalResource.save(this.item);
     this.$notify({ title: "", message: "投资机构保存成功", type: "success" });
-    this.$router.replace("/capital/" + this.item.id);
+    if (this.$route.params.id === "add") {
+      this.$router.replace("/capital/" + this.item.id);
+    }
+    if (!this.item.recentInvestments.length) {
+      this.item.recentInvestments.push("");
+    }
   }
 
   async created() {
