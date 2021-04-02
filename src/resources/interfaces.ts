@@ -49,7 +49,7 @@ export interface Capital extends Entity {
   recentInvestments: string[];
 }
 
-export interface Contact {
+export interface Contact extends Model {
   name: string;
   contactDetails: Contact[];
   remarks?: string;
@@ -64,7 +64,7 @@ export interface File extends Model {
   url: string;
 }
 
-export interface Investment {
+export interface Investment extends Model {
   status: "pending" | "rejected" | "following" | "funded";
   capital: Capital;
   business: Business;
@@ -74,7 +74,7 @@ export interface Investment {
   meetings: Meeting[];
 }
 
-export interface Meeting {
+export interface Meeting extends Model {
   investment: Ref<Investment>;
   date: string;
   files: File[];

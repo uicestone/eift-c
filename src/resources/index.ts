@@ -1,6 +1,16 @@
 import Axios, { AxiosRequestConfig } from "axios";
 import Resource from "./Resource";
-import { ConfigItem, User, File, Post, Capital } from "./interfaces";
+import {
+  ConfigItem,
+  User,
+  File,
+  Post,
+  Capital,
+  Business,
+  Meeting,
+  Contact,
+  Investment,
+} from "./interfaces";
 
 export const http = Axios.create({
   baseURL: process.env.VUE_APP_API_BASE,
@@ -42,14 +52,25 @@ http.interceptors.response.use(
   }
 );
 
+export const BusinessResource = new Resource<Business>(http, "business/{id}");
+
 export const CapitalResource = new Resource<Capital>(http, "capital/{id}");
+
+export const ContactResource = new Resource<Contact>(http, "contact/{id}");
 
 export const ConfigItemResource = new Resource<ConfigItem>(
   http,
   "config/{key}"
 );
 
+export const InvestmentResource = new Resource<Investment>(
+  http,
+  "contact/{id}"
+);
+
 export const FileResource = new Resource<File>(http, "file/{id}");
+
+export const MeetingResource = new Resource<Meeting>(http, "meeting/{id}");
 
 export const PostResource = new Resource<Post>(http, "post/{id}");
 
