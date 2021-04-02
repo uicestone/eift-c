@@ -222,14 +222,10 @@
       <dashboard-navbar :type="$route.meta.navbarType"></dashboard-navbar>
 
       <div @click="$sidebar.displaySidebar(false)">
-        <fade-transition :duration="200" origin="center top" mode="out-in">
-          <keep-alive>
-            <router-view :key="$route.fullPath" v-if="$route.meta.keepAlive && !$isDev" />
-          </keep-alive>
-        </fade-transition>
-        <fade-transition :duration="200" origin="center top" mode="out-in">
-          <router-view :key="$route.fullPath" v-if="!$route.meta.keepAlive || $isDev" />
-        </fade-transition>
+        <keep-alive>
+          <router-view :key="$route.fullPath" v-if="$route.meta.keepAlive && !$isDev" />
+        </keep-alive>
+        <router-view :key="$route.fullPath" v-if="!$route.meta.keepAlive || $isDev" />
       </div>
       <content-footer v-if="!$route.meta.hideFooter"></content-footer>
     </div>
@@ -263,7 +259,6 @@ export default {
   components: {
     DashboardNavbar,
     ContentFooter,
-    FadeTransition,
   },
   data: () => {
     return {
