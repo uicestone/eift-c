@@ -8,12 +8,12 @@
         <button class="ql-link"></button>
         <button class="ql-blockquote"></button>
         <button class="ql-code"></button>
-        <button class="ql-image"></button>
+        <!-- <button class="ql-image"></button> -->
         <button type="button" class="ql-list" value="ordered"></button>
         <button type="button" class="ql-list" value="bullet"></button>
       </div>
     </div>
-    <div :id="editorId" :name="name" class="" ref="editor"></div>
+    <div :id="editorId" :name="name" class ref="editor" v-show="show"></div>
   </div>
 </template>
 <script>
@@ -33,10 +33,12 @@ export default {
       lastHtmlValue: "",
       editorId: null,
       toolbarId: null,
+      show: false,
     };
   },
   methods: {
     initialize(Quill) {
+      this.show = true;
       this.editor = new Quill(`#${this.editorId}`, {
         theme: "snow",
         modules: {
@@ -50,6 +52,7 @@ export default {
 
       let editorRef = this.$refs.editor;
       let node = editorRef.children[0];
+
       this.editor.on("text-change", () => {
         let html = node.innerHTML;
         if (html === "<p><br></p>") {
