@@ -19,9 +19,9 @@
                   h3.mb-0(slot='header') 基本信息
                   .row
                     .col-md-12
-                      base-input(placeholder='名称' v-model="item.name" name="名称" :rules="{required:true}")
+                      base-input(placeholder='名称' v-model="item.name" label="名称" name="名称" :rules="{required:true}")
                     .col-md-12
-                      base-input(placeholder='主要LP' v-model="item.majorLp" name="主要LP" :rules="{required:true}")
+                      base-input(placeholder='主要LP' v-model="item.majorLp" label="主要LP" name="主要LP" :rules="{required:true}")
                 card
                   template(#header)
                     .row
@@ -33,9 +33,9 @@
                             i.ni.ni-fat-add
                   .row(v-for="(team,i) in item.teams" :key="i")
                     .col-md-6
-                      base-input(placeholder='联系人' v-model="team.name")
+                      base-input(placeholder='联系人' label="联系人" v-model="team.name")
                     .col-md-6
-                      base-input(placeholder='联系方式' v-model="team.contacts")
+                      base-input(placeholder='联系方式' label="联系方式" v-model="team.contacts")
                 .card
                   .card-header
                     h3.mb-0 备注

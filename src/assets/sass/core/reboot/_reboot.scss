@@ -11,3 +11,14 @@ main {
 main {
     overflow: hidden;
 }
+
+p {
+    line-height: 1.5;
+    font-weight: 400;
+    margin-bottom: 0.5em;
+}
+
+body {
+    font-family: "Microsoft Yahei UI", "Microsoft Yahei", Open Sans, sans-serif;
+    color: $gray-800;
+}

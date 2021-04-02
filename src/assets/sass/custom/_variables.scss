@@ -486,6 +486,7 @@ $table-dark-head-bg:          lighten(theme-color("default"), 4%) !default;
 $table-dark-head-color:       lighten(theme-color("default"), 35%) !default;
 $table-dark-action-color:     lighten(theme-color("default"), 35%) !default;
 
+$table-color: $gray-800;
 
 
 // Buttons + Forms
@@ -539,7 +540,7 @@ $input-disabled-bg:                     $gray-200 !default;
 $input-muted-bg:                        #F7FAFE !default;
 $input-focus-muted-bg:                  lighten($input-muted-bg, 1%) !default;
 
-$input-color:                           $gray-600 !default;
+$input-color:                           $gray-700 !default;
 $input-border-color:                    $gray-300 !default;
 $input-border-width:                    $input-btn-border-width !default;
 $input-box-shadow:                      0 3px 2px rgba($gray-200, .05) !default;
