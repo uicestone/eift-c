@@ -94,10 +94,15 @@ import DropFileUpload from "@/components/Inputs/DropFileUpload.vue";
 })
 export default class CapitalDetail extends Vue {
   item: Capital = {
+    name: "",
     features: [],
     majorLp: "",
     teams: [{ name: "", contacts: "" }],
     recentInvestments: [],
+    files: [],
+    remarks: "",
+    addresses: [],
+    contacts: [],
   };
 
   addTeam() {

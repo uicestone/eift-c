@@ -55,7 +55,7 @@ export interface Contact extends Model {
 
 export interface Entity extends Model {
   name: string;
-  abbr: string;
+  abbr?: string;
   contacts: Contact[];
   addresses: Address[];
   files: File[];
