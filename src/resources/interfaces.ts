@@ -40,8 +40,6 @@ export interface ConfigItem extends Model, Record<string, any> {
   value: any;
 }
 
-export interface Business extends Entity {}
-
 export interface Capital extends Entity {
   features: string[];
   majorLp: string;
@@ -51,11 +49,18 @@ export interface Capital extends Entity {
 
 export interface Contact extends Model {
   name: string;
-  contactDetails: Contact[];
+  contactDetails: ContactDetail[];
   remarks?: string;
 }
 
-export interface Entity extends Model {}
+export interface Entity extends Model {
+  name: string;
+  abbr: string;
+  contacts: Contact[];
+  addresses: Address[];
+  files: File[];
+  remarks: string;
+}
 
 export interface File extends Model {
   uri: string;

@@ -9,6 +9,16 @@ const CapitalList = () =>
 const CapitalDetail = () =>
   import(/* webpackChunkName: "capital" */ "@/views/Capital/CapitalDetail.vue");
 
+const BusinessList = () =>
+  import(
+    /* webpackChunkName: "business" */ "@/views/Business/BusinessList.vue"
+  );
+// Charts
+const BusinessDetail = () =>
+  import(
+    /* webpackChunkName: "business" */ "@/views/Business/BusinessDetail.vue"
+  );
+
 // Calendar
 const Calendar = () =>
   import(/* webpackChunkName: "extra" */ "@/views/Calendar/Calendar.vue");
@@ -227,6 +237,26 @@ let capitalMenu = {
   ],
 };
 
+let businessMenu = {
+  path: "/business",
+  component: DashboardLayout,
+  name: "被投企业",
+  redirect: "/business/index",
+  children: [
+    {
+      path: "index",
+      name: "被投企业列表",
+      component: BusinessList,
+      meta: { keepAlive: true },
+    },
+    {
+      path: ":id",
+      name: "被投企业详情",
+      component: BusinessDetail,
+    },
+  ],
+};
+
 let authPages = {
   path: "/",
   component: AuthLayout,
@@ -276,6 +306,7 @@ const routes = [
   mapsMenu,
   pagesMenu,
   capitalMenu,
+  businessMenu,
   {
     path: "/",
     component: DashboardLayout,

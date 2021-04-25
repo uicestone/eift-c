@@ -7,7 +7,7 @@
   .el-input .el-input__inner {
     font-size: $input-btn-font-size;
     width: 100%;
-    height: $input-height;
+    height: calc(1.5em + 1.25rem + 5px); // $input-height;
     @include transition($transition-ease-in-out);
 
     &:focus{
