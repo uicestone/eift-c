@@ -15,7 +15,7 @@
               el-table-column(label='名称' prop='name' sortable)
               el-table-column(label='联系人' prop='contacts' sortable)
                 template(#default="{row:{contacts}}")
-                  span {{contacts}}
+                  span {{contacts.map(c=>c.name).join("、")}}
             .card-footer.pt-2.pb-0.d-flex.justify-content-end
               base-pagination(v-model='currentPage' :perPage="perPage" :total='total')
 

@@ -9,10 +9,10 @@
       li.list-group-item.px-0(v-for="file in files" :key="file.name")
         .row.align-items-center
           .col-auto
-            .avatar
-              img.avatar-img.rounded
+            .avatar.bg-primary(@click="open(file)" style="font-size:2rem;cursor:pointer")
+              i.far(:class="'fa-'+fileTypeIcon(file)")
           .col.ml--3
-            h4.mb-1 {{file.name}}
+            h4.mb-1(@click="open(file)" style="cursor:pointer") {{file.name}}
             p.small.text-muted.mb-0 {{file.createdAt|date}}
           .col-auto
             button.btn.btn-danger.btn-sm(@click="removeFile(file)")
@@ -45,11 +45,35 @@ export default class DropFileUpload extends Vue {
     this.$emit("change", files);
   }
 
+  fileTypeIcon(file: FileDoc) {
+    const extension = file.name.match(/.*\.(.*?)$/)?.[1] || "";
+    if (extension.match(/jpe?g|png|gif|bmp|tif/)) {
+      return "file-image";
+    }
+    if (extension.match(/docx?/)) {
+      return "file-word";
+    }
+    if (extension.match(/xlsx?/)) {
+      return "file-excel";
+    }
+    if (extension.match(/pptx?/)) {
+      return "file-powerpoint";
+    }
+    if (extension.match(/pdf?/)) {
+      return "file-pdf";
+    }
+  }
+
   addDropFile(e: DragEvent) {
     if (!e.dataTransfer) return;
     Array.from(e.dataTransfer.files).forEach(async (file) => {
       const fileDoc = await this.uploadFile(file);
       this.files.push(fileDoc);
+    });
+    this.$notify({
+      title: "文件已上传",
+      message: "您还需要点击保存按钮将它保存到当前页面",
+      type: "info",
     });
   }
 
@@ -68,6 +92,15 @@ export default class DropFileUpload extends Vue {
 
   removeFile(file: File | FileDoc) {
     this.files = this.files.filter((f) => f.name !== file.name);
+    this.$notify({
+      title: "文件还未删除",
+      message: "您还需要点击保存按钮，撤销请退出或刷新当前页面",
+      type: "info",
+    });
+  }
+
+  open(file: FileDoc) {
+    window.open(file.url);
   }
 }
 </script>
